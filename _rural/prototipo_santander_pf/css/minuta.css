@@ -1,0 +1,1445 @@
+a:link {
+	color: #000;
+	text-decoration:none;
+}
+a:visited {
+	color: #000;
+	text-decoration:none;
+}
+a:hover {
+	color: #000;
+	text-decoration:none;
+}
+a:active {
+	color: #000;
+	text-decoration:none;
+}
+.scrollVersaoClausula li {
+	list-style-type:none;
+	margin-bottom:5px;
+	margin-top:5px;
+}
+.hierarquia {
+	background:url(file:///D|/vivere-des/resources/css/images/linha_hierarquia.png) left repeat-y;
+}
+.groupImg {
+	display:none;
+	position:absolute;
+	index-z:10;
+	top:12px;
+	left:16px;
+}
+
+.icone_contrato_cabecalho {
+	background-image:url(/images/icone_contrato_cabecalho.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+.icone_contrato_cabecalho_des {
+	background-image:url(/images/icone_contrato_cabecalho.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.icone_contrato_rodape {
+	background-image:url(/images/icone_contrato_cabecalho.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.icone_contrato_rodape_des {
+	background-image:url(/images/icone_contrato_cabecalho.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.CTPR {
+	background-image:url(/images/icone_minuta.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.CTSB {
+	background-image:url(/images/icone_sub_contrato.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.R_clausula_fixa {
+	background-image:url(/images/icone_contrato_clausula_fixa.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.RF {
+	background-image:url(/images/icone_contrato_clausula_fixa.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.RA {
+	background-image:url(/images/icone_contrato_clausula_auto.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.RD {
+	background-image:url(/images/icone_contrato_clausula_adicionar.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.RO {
+	background-image:url(/images/icone_contrato_clausula_especial.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.O_contrato_construtor {
+	background-image:url(/images/icone_contrato_construtor.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.OE {
+	background-image:url(/images/icone_contrato_construtor.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.OFA {
+	background-image:url(/images/icone_contrato_construtor.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.A_contrato_anuente {
+	background-image:url(/images/icone_contrato_anuente.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.AO {
+	background-image:url(/images/icone_contrato_anuente.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.AF {
+	background-image:url(/images/icone_contrato_anuente.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.AG {
+	background-image:url(/images/icone_contrato_anuente.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.AGO {
+	background-image:url(/images/icone_contrato_anuente.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.AFGO {
+	background-image:url(/images/icone_contrato_anuente.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.D_contrato_devedor {
+	background-image:url(/images/icone_contrato_devedor.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.DG {
+	background-image:url(/images/icone_contrato_devedor.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.DGO {
+	background-image:url(/images/icone_contrato_devedor.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.DO {
+	background-image:url(/images/icone_contrato_devedor.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.F_icone_contrato_fiador {
+	background-image:url(/images/icone_contrato_fiador.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.FAG {
+	background-image:url(/images/icone_contrato_fiador.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.FO {
+	background-image:url(/images/icone_contrato_fiador.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.H_contrato_hipotecante {
+	background-image:url(/images/icone_contrato_hipotecante.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.N_contrato_construtor {
+	background-image:url(/images/icone_contrato_construtor.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.I_contrato_interveniente {
+	background-image:url(/images/icone_contrato_interveniente.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.IO {
+	background-image:url(/images/icone_contrato_interveniente.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.IG {
+	background-image:url(/images/icone_contrato_interveniente.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.IGO {
+	background-image:url(/images/icone_contrato_interveniente.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.IGF {
+	background-image:url(/images/icone_contrato_interveniente.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.IGOF {
+	background-image:url(/images/icone_contrato_interveniente.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.IH {
+	background-image:url(/images/icone_contrato_interveniente.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.IHO {
+	background-image:url(/images/icone_contrato_interveniente.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.IHF {
+	background-image:url(/images/icone_contrato_interveniente.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.IHOF {
+	background-image:url(/images/icone_contrato_interveniente.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.IP {
+	background-image:url(/images/icone_contrato_interveniente.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.IPO {
+	background-image:url(/images/icone_contrato_interveniente.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.IPF {
+	background-image:url(/images/icone_contrato_interveniente.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.IPOF {
+	background-image:url(/images/icone_contrato_interveniente.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.B_contrato_credor {
+	background-image:url(/images/icone_contrato_credor.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.C_contrato_comprador {
+	background-image:url(/images/icone_contrato_comprador.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.E_contrato_resp_tecnico {
+	background-image:url(/images/icone_contrato_resp_tecnico.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.CA {
+	background-image:url(/images/icone_contrato_comprador.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.V_contrato_vendedor {
+	background-image:url(/images/icone_contrato_vendedor.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.VA {
+	background-image:url(/images/icone_contrato_vendedor.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.G_torres_verde {
+	background-image:url(/images/icone_torres_verde.gif);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.GI {
+	background-image:url(/images/icone_contrato_imovel.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.GV {
+	background-image:url(/images/iconeVeiculoVerde.gif);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.Q_contrato_quadro_resumo {
+	background-image:url(/images/icone_contrato_quadro_resumo.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.T_contrato_clausula_texto {
+	background-image:url(/images/icone_contrato_clausula_texto.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.FASS {
+	background-image:url(/images/icone_contrato_quadro_assinatura.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.CTPR_des {
+	background-image:url(/images/icone_minuta_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.CTSB_des {
+	background-image:url(/images/icone_sub_contrato_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.R_clausula_fixa_des {
+	background-image:url(/images/icone_contrato_clausula_fixa_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+.RF_des {
+	background-image:url(/images/icone_contrato_clausula_fixa_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.RA_des {
+	background-image:url(/images/icone_contrato_clausula_auto_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.RD_des {
+	background-image:url(/images/icone_contrato_clausula_adicionar_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.RO_des {
+	background-image:url(/images/icone_contrato_clausula_especial_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.O_contrato_construtor_des {
+	background-image:url(/images/icone_contrato_construtor_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.OE_des {
+	background-image:url(/images/icone_contrato_construtor_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.OFA_des {
+	background-image:url(/images/icone_contrato_construtor_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.A_contrato_anuente_des {
+	background-image:url(/images/icone_contrato_anuente_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.AO_des {
+	background-image:url(/images/icone_contrato_anuente_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.AF {
+	background-image:url(/images/icone_contrato_anuente.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.AG_des {
+	background-image:url(/images/icone_contrato_anuente_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.AGO_des {
+	background-image:url(/images/icone_contrato_anuente_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.AFGO_des {
+	background-image:url(/images/icone_contrato_anuente_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.D_contrato_devedor_des {
+	background-image:url(/images/icone_contrato_devedor_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.DC {
+	background-image:url(/images/icone_contrato_devedor_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.DG_des {
+	background-image:url(/images/icone_contrato_devedor_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.DGO_des {
+	background-image:url(/images/icone_contrato_devedor_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.DO_des {
+	background-image:url(/images/icone_contrato_devedor_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.F_icone_contrato_fiador_des {
+	background-image:url(/images/icone_contrato_fiador_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.FAG_des {
+	background-image:url(/images/icone_contrato_fiador_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.FC {
+	background-image:url(/images/icone_contrato_fiador_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.H_contrato_hipotecante_des {
+	background-image:url(/images/icone_contrato_hipotecante_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.N_contrato_construtor_des {
+	background-image:url(/images/icone_contrato_construtor_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.I_contrato_interveniente_des {
+	background-image:url(/images/icone_contrato_interveniente_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.IO_des {
+	background-image:url(/images/icone_contrato_interveniente_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.IG_des {
+	background-image:url(/images/icone_contrato_interveniente_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.IGC {
+	background-image:url(/images/icone_contrato_interveniente_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.IGF_des {
+	background-image:url(/images/icone_contrato_interveniente_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.IGCF {
+	background-image:url(/images/icone_contrato_interveniente_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.IH_des {
+	background-image:url(/images/icone_contrato_interveniente_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.IHC {
+	background-image:url(/images/icone_contrato_interveniente_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.IHF_des {
+	background-image:url(/images/icone_contrato_interveniente_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.IHCF {
+	background-image:url(/images/icone_contrato_interveniente_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.IP_des {
+	background-image:url(/images/icone_contrato_interveniente_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.IPC {
+	background-image:url(/images/icone_contrato_interveniente_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.IPF_des {
+	background-image:url(/images/icone_contrato_interveniente_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.IPCF_des {
+	background-image:url(/images/icone_contrato_interveniente_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.B_contrato_credor_des {
+	background-image:url(/images/icone_contrato_credor_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.C_contrato_comprador_des {
+	background-image:url(/images/icone_contrato_comprador_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.E_contrato_resp_tecnico_des {
+	background-image:url(/images/icone_contrato_resp_tecnico_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.CA_antigo {
+	background-image:url(/images/icone_contrato_comprador_antigo.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.V_contrato_vendedor_antigo {
+	background-image:url(/images/icone_contrato_vendedor_antigo.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.VA_antigo {
+	background-image:url(/images/icone_contrato_vendedor_antigo.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.G_torres_vermelho {
+	background-image:url(/images/icone_torres_vermelho.gif);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.GI_antigo {
+	background-image:url(/images/icone_contrato_imovel_antigo.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.GV_vermelho {
+	background-image:url(/images/iconeVeiculoVermelho.gif);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.Q_contrato_quadro_resumo_des {
+	background-image:url(/images/icone_contrato_quadro_resumo_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.T_contrato_clausula_texto_des {
+	background-image:url(/images/icone_contrato_clausula_texto_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.FASS_des {
+	background-image:url(/images/icone_contrato_quadro_assinatura_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.P_contrato_procurador {
+	background-image:url(/images/icone_contrato_procurador.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.R_contrato_representante {
+	background-image:url(/images/icone_contrato_representante.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.P_contrato_procurador_des {
+	background-image:url(/images/icone_contrato_procurador_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.R_contrato_representante_des {
+	background-image:url(/images/icone_contrato_representante_des.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.A_alerta {
+	background-image:url(/images/icone_alerta.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:9px;
+	height:9px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.E_erro {
+	background-image:url(/images/icone_erro.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:9px;
+	height:9px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.O_obrigatorio {
+	background-image:url(/images/icone_obrigatorio.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:9px;
+	height:9px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.N_numeracao {
+	background-image:url(/images/icone_numeracao.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:9px;
+	height:9px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.D_contrato_nao_editavel {
+	background-image:url(/images/icone_contrato_nao_editavel.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.X_contrato_editavel {
+	background-image:url(/images/icone_contrato_editavel.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}
+
+.S {
+	background-image:url(/images/icone_contrato_substituir_versao.png);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	margin-left:1px;
+	margin-right:1px;
+	display:inline-block;
+
+}

@@ -1,0 +1,208 @@
+ <!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Simulação (Recalcular Taxa)</title>
+<script language="javascript" type="text/javascript" src="../js/jquery-2.1.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="../js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.css" />
+
+</head>
+
+<body>
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container">
+			<div class="navbar-header pull-left navbar-margin-elements">
+				<img src="../img/marca-vivere-50.png">
+			</div>
+			<div class="navbar-header pull-right navbar-margin-elements width-200" style="margin-top:17px">
+				<img class="pull-right" src="../img/foto-usuario.png">
+				<p class="pull-right text-right navbar-text-margin color-text-blue"><strong>Ricardo da Silva</strong></p>
+				<p class="pull-right text-right navbar-text-margin color-text-gray">Consultor</p>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="info-cliente">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td width="200">
+						<h4 class="color-text-white">Rodrigo Burattini</h4>
+						<h5 class="color-text-white">324.564.038-00</h5>
+					</td>
+					<td width="200">
+						<h4 class="color-text-white">27/07/1984</h4>
+						<h5 class="color-text-white">Pessoa Física</h5>
+					</td>
+					<td width="200">
+						<h4 class="color-text-white">rodrigo.burattini@viverebrasil.com.br</h4>
+						<h5 class="color-text-white">(11) 98133-3329</h5>
+					</td>
+				</tr>
+			</table>
+	
+		</div>
+	</div>
+	<div class="container">
+    <div class="box-accordion" style="margin-top:20px; cursor:default;">
+			<div class="col-md-5">
+				<h5 class="color-text-gray">Veículo</h5>
+				<h4 class="color-text-blue">Toyota Corolla 2.0 XEI 16v Automático 2015</h4>
+			</div>
+			<div class="col-md-3">
+				<h5 class="color-text-gray">Proposta</h5>
+				<h4 class="color-text-blue">4558787</h4>
+			</div>
+			<div class="col-md-3">
+				<h5 class="color-text-gray">Valor do Veículo</h5>	
+				<h4 class="color-text-blue">R$ 68.200,00</h4>
+			</div>
+			<div class="col-md-1 text-center margin-top-9">
+					
+			</div>
+		</div>
+		<h2 class="titulo color-text-gray">Simulação<span class="line"></span></h2>
+		<div class="panel panel-default" style="margin-top:20px">
+			<div class="panel-body">
+				<div role="form" class="container-fluid form-horizontal">
+                	<h3 class="titulo color-text-gray">Escolha de Financiamento<span class="line-sub"></span></h3>
+                    <div class="form-group" style="margin-top:20px"> 
+						<div style="margin-left:0" class="col-sm-12 form-group">
+							<div class="col-sm-6">
+								<label class="radio-inline">
+ 	 								<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Sem Isenção
+                                </label>
+                                <label class="radio-inline">
+                                  	<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Isenção de IPI
+                                </label>
+                                <label class="radio-inline">
+                                  	<input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Isenção de IPI e ICMS
+                                </label>
+							</div>
+						</div>
+          			</div>
+                    <table class="table table-bordered">
+                    	<thead>
+                        	<tr>
+                            	<th class="text-center">Prazo</th>
+                                <th class="text-center">Parcela Mensal</th>
+                                <th class="text-center">Taxa de Juros</th>
+                                <th class="text-center">Comissão valor</th>
+                                <th class="text-center">Comissão %</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        	<tr>
+                            	<td>
+                                	<h2 class="text-center">48</h2>
+                                </td>
+                                <td>
+                                	<h2 class="text-center">1.584,38</h2>
+                                </td>
+                                 <td>
+                                	<h2 class="text-center">1,82%</h2>
+                                </td>
+                                 <td>
+                                	<h2 class="text-center">1.397,00</h2>
+                                </td>
+                                 <td>
+                                	<h2 class="text-center">2,9%</h2>
+                                </td>
+                            </tr>
+                            <tr>
+                            	<td class="text-center">
+                                	<select class="form-control">
+                                    	<option></option>
+                                        <option>48</option>
+                                        <option>42</option>
+                                        <option>36</option>
+                                    </select>
+                                </td>
+                                <td>
+                                	<input type="text" class="form-control">
+                                </td>
+                                 <td>
+                                	<input type="text" class="form-control">
+                                </td>
+                                 <td>
+                                	<input type="text" class="form-control">
+                                </td>
+                                <td>
+                                	<input type="text" class="form-control">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+          			<h3 class="titulo color-text-gray">Dados Simulação<span class="line-sub"></span></h3>
+					<div class="form-group" style="margin-top:20px"> 
+						<div style="margin-left:0" class="col-sm-10 form-group">
+							<div class="col-sm-6">
+								<label for="#">Campanha</label>
+								<select class="form-control">
+									<option></option>
+									<option>combo Itaú</option>
+									<option>combo Accenture plus</option>
+								</select>
+							</div>
+						</div>
+          			</div>
+					<h3 class="titulo color-text-gray hide">Informe ao menos uma das três questões abaixo:<span class="line-sub"></span></h3>
+					<div class="form-group hide" style="margin-top:20px"> 
+						<div style="margin-left:0" class="col-sm-10 form-group">
+							<div class="col-sm-4">
+								<label for="#">Qual o valor do financiamento?</label>
+								<input type="text" class="form-control" value="120.000,00">
+							</div>
+							<div class="col-sm-4">
+								<label for="#">Qual é o valor da Prestação?</label>
+								<input type="text" class="form-control" value="">
+							</div>
+							<div class="col-sm-4">
+								<label for="#">Qual o prazo pretendido?</label>
+								<input type="text" class="form-control" value="168">
+							</div>
+						</div>
+						
+          			</div>
+					<h3 class="titulo color-text-gray hide">Indexadores e Taxas:<span class="line-sub"></span></h3>
+					<div class="form-group hide" style="margin-top:20px"> 
+						<div style="margin-left:0" class="col-sm-10 form-group">
+							<div class="col-sm-6">
+								<div class="radio">
+									<label>
+										<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+											PREF
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+										IGPM
+									</label>
+								</div>
+							</div>
+						</div>
+						
+          			</div>
+                    <h3 class="titulo color-text-gray">Seguro:<span class="line-sub"></span></h3>
+                    <div style="margin-left:0" class="col-sm-10 form-group">
+							<div class="col-sm-6">
+								<label for="#">Seguradora</label>
+								<select class="form-control">
+									<option></option>
+									<option>livre escolha</option>
+									<option>Itaú Seguros</option>
+                                    <option>Porto Seguro</option>
+								</select>
+							</div>
+						</div>
+      			</div>
+			</div>
+		</div>
+		<a href="4-1_resultadoSimulacao.html" class="btn btn-primary btn pull-right btn-lg center-block" type="button" style="margin-bottom:20px">Calcular <span class="glyphicon glyphicon-chevron-right"></span></a>
+        <a href="4-resultadoSimulacao.html" class="btn btn-primary btn pull-left btn-lg center-block" type="button" style="margin-bottom:20px"><span class="glyphicon glyphicon-chevron-left"></span> Voltar</a>
+	</div>
+</body>
+</html>

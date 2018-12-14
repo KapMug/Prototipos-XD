@@ -1,0 +1,314 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Guia de Componentes HTML/CSS</title>
+<script language="javascript" type="text/javascript" src="../js/jquery-2.1.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script language="javascript" type="text/javascript" src="../js/jquery.tooltipster.js"></script>
+<script language="javascript" type="text/javascript" src="../js/comum.js"></script>
+<script language="javascript" type="text/javascript" src="../js/bootstrap-datepicker.js"></script>
+<script language="javascript" type="text/javascript" src="../js/locales/bootstrap-datepicker.pt-BR.js"></script>
+
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.css" />
+<link rel="stylesheet" type="text/css" href="../css/datepicker3.css" />
+
+</head>
+<script>
+	$(document).ready(function() {
+   	$('.input-daterange').datepicker({
+			format: 'dd/mm/yyyy',
+			language: 'pt-BR'
+    	});   
+   });
+	 
+</script>
+<body style="background:#F3F3F3">
+	<div class="container">
+   	<h1>Guia de Componentes HTML/CSS</h1>
+      <hr>
+      <h2>Títulos</h2>
+      <h2 class="titulo color-text-gray">Título Página<span class="line"></span></h2>
+      <h3 class="titulo color-text-gray">Título Interno<span class="line-sub"></span></h3>
+      <hr>
+      <h2>Tabelas</h2>
+      <h4>Tabela com espaços</h4>
+      <table width="100%" cellpadding="0" cellspacing="0" border="0" class="tabela">
+			<thead>
+				<tr>
+					<td>Prazo</td>
+					<td>Valor Financiado</td>
+					<td>Máximo L.T.V</td>
+					<td>Valor da Prestação</td>
+               <td>Comissão</td>
+					<td>Renda Mínima</td>
+					<td>Taxa de Juros Nominal</td>					
+				</tr>
+			</thead>
+			<tbody>
+				<tr name="dadosTabelaSimulacao">
+					<td>
+						<div style="margin-top:15px;" class="ma">
+							<h3 class="color-text-gray">60</h3>
+						</div>
+					</td>
+					<td>
+						<div class="margin-top-15">
+							<h3 class="color-status-aprovado">120.000,00</h3>
+						</div>
+					</td>
+					<td>
+						<div class="margin-top-15">
+							<h3 class="color-text-gray">160.000,00</h3>
+						</div>
+					</td>
+					<td>
+						<div class="margin-top-15">
+							<h3 class="color-text-gray">2.856,10</h3>
+						</div>
+					</td>
+                    <td>
+						<div class="margin-top-15">
+							<h3 class="color-text-gray">1,200</h3>
+						</div>
+					</td>
+					<td>
+						<div class="margin-top-15">
+							<h3 class="color-text-gray">9.520,00</h3>
+						</div>
+					</td>
+					<td>
+						<div class="margin-top-15">
+							<h3 class="color-text-gray">9,02134</h3>
+						</div>
+					</td>
+				</tr>
+				<tr name="dadosTabelaSimulacao">
+					<td>
+						<div class="margin-top-15">
+							<h3 class="color-text-gray">132</h3>
+						</div>
+					</td>
+					<td>
+						<div class="margin-top-15">
+							<h3 class="color-status-aprovado">120.000,00</h3>
+						</div>
+					</td>
+					<td>
+						<div class="margin-top-15">
+							<h3 class="color-text-gray">160.000,00</h3>
+						</div>
+					</td>
+					<td>
+						<div class="margin-top-15">
+							<h3 class="color-text-gray">1.890,15</h3>
+						</div>
+					</td>
+                    <td>
+						<div class="margin-top-15">
+							<h3 class="color-text-gray">1,200</h3>
+						</div>
+					</td>
+					<td>
+						<div class="margin-top-15">
+							<h3 class="color-text-gray">6.301,00</h3>
+						</div>
+					</td>
+					<td>
+						<div class="margin-top-15">
+							<h3 class="color-text-gray">9,02134</h3>
+						</div>
+					</td>
+					
+				</tr>
+				<tr name="dadosTabelaSimulacao">
+					<td>
+						<div class="margin-top-15">
+							<h3 class="color-text-gray">168</h3>
+						</div>
+					</td>
+					<td>
+						<div class="margin-top-15">
+							<h3 class="color-status-aprovado">120.000,00</h3>
+						</div>
+					</td>
+					<td>
+						<div class="margin-top-15">
+							<h3 class="color-text-gray">160.000,00</h3>
+						</div>
+					</td>
+					<td>
+						<div class="margin-top-15">
+							<h3 class="color-text-gray">1.668,68</h3>
+						</div>
+					</td>
+                    <td>
+						<div class="margin-top-15">
+							<h3 class="color-text-gray">1,200</h3>
+						</div>
+					</td>
+					<td>
+						<div class="margin-top-15">
+							<h3 class="color-text-gray">5.562,00</h3>
+						</div>
+					</td>
+					<td>
+						<div class="margin-top-15">
+							<h3 class="color-text-gray">9,02134</h3>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+      <h4>Tabela simples</h4>
+      <table class="tabelaSimples" width="100%" border="0" cellpadding="0" cellspacing="0">
+         <thead>
+            <tr>
+               <td>%</td>
+               <td>CPF/CNPJ</td>
+               <td>Comprador</td>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td><input type="text" class="form-control" value="50,00"></td>
+               <td>842.802.129-53</td>
+               <td>MARCOS ANTONIO DE CARVALHO </td>
+            </tr>
+            <tr>
+               <td><input type="text" class="form-control" value="50,00"></td>
+               <td>005.032.889-18</td>
+               <td>SONIA APARECIDA DE CARVALHO </td>
+            </tr>
+         </tbody>
+      </table>
+      <hr>
+      <h2>Formulários</h2>
+      <h4>Formulários Default</h4>
+      <div class="form-group"> 
+         <div class="col-sm-12 form-group">
+            <div class="col-sm-3">
+               <label for="#">Qualificação</label>
+               <select class="form-control">
+                  <option value=""></option>	
+                  <option>Comprador</option>
+                  <option>Procurador</option>
+                  <option>Devedor Solidário</option>
+                  <option>Interveniente Quitante</option>
+                  <option>Instituição Financeira Originadora</option>
+                  <option>Anuente</option>
+                  <option>Procurador</option>
+                  <option>Fiador</option>
+                  <option>Vendedor</option>
+               </select>
+            </div>
+            <div class="col-sm-3">
+               <label for="#">CPF</label>
+               <input type="text" class="form-control" value="324.564.038-00">
+            </div>
+            <div class="col-sm-6">
+               <label for="#">Nome Completo</label>
+               <input type="text" class="form-control" value="Rodrigo Burattini">
+            </div>
+         </div>
+         					
+		</div>
+      <h4>Inputs diversos</h4>
+      <div class="input-group">
+     		<input type="text" class="form-control" placeholder="Pesquise pelo Nº Proposta, CPF...">
+      	<span class="input-group-btn">
+        		<a href="1-1_index.html" class="btn btn-primary" type="button"><span class="glyphicon glyphicon-search"></span></a>
+      	</span>
+    	</div>
+      <div class="btn-group margin-top-15" data-toggle="buttons">
+  			<label class="btn btn-primary active">
+    			<input type="radio" name="options" id="option1" autocomplete="off" checked> 
+            <span>Radio 1 (preselected)</span>
+  			</label>
+  			<label class="btn btn-primary">
+    			<input type="radio" name="options" id="option2" autocomplete="off"> 
+            <span>Radio 2</span>
+  			</label>
+  			<label class="btn btn-primary">
+    			<input type="radio" name="options" id="option3" autocomplete="off">
+            <span>Radio 3</span>
+  			</label>
+		</div>
+      <div class="input-daterange input-group margin-top-15" id="datepicker">
+    		<input type="text" class=" form-control" name="start" />
+    		<span class="input-group-addon">para</span>
+    		<input type="text" class=" form-control" name="end" />
+    	</div>
+      <hr>
+      <h2>Botões</h2>
+      <h4>Botão normal</h4>
+      <a href="#" type="button" class="btn btn-primary">Botão</a>
+      <a href="#" type="button" class="btn btn-success">Botão</a>
+      <a href="#" type="button" class="btn btn-danger">Botão</a>
+      <a href="#" type="button" class="btn btn-warning">Botão</a>
+      <h4>Botão grande</h4>
+      <a href="#" type="button" class="btn btn-primary btn-lg">Botão</a>
+      <a href="#" type="button" class="btn btn-success btn-lg">Botão</a>
+      <a href="#" type="button" class="btn btn-danger btn-lg">Botão</a>
+      <a href="#" type="button" class="btn btn-warning btn-lg">Botão</a>
+      <hr>
+      <h2>Painel</h2>
+      <div class="panel panel-default">
+			<div class="panel-body">
+				<div class="form-group"> 
+               <div class="col-sm-12 form-group">
+                  <div class="col-sm-3">
+                     <label for="#">Qualificação</label>
+                     <select class="form-control">
+                        <option value=""></option>	
+                        
+                     </select>
+                  </div>
+                  <div class="col-sm-3">
+                     <label for="#">CPF</label>
+                     <input type="text" class="form-control">
+                  </div>
+                  <div class="col-sm-6">
+                     <label for="#">Nome Completo</label>
+                     <input type="text" class="form-control">
+                  </div>
+               </div>
+         	</div>	
+         </div>
+      </div>
+      <hr>
+      <h2>Accordion (Collapse)</h2>
+      <div class="box-accordion" name="accordionCadastro" data-toggle="collapse" data-parent="#accordion" href="#editarParticipante">
+			<div class="col-md-4">
+				<h5 class="color-text-gray">Qualificação</h5>
+				<h4 class="color-text-blue">Comprador</h4>	
+			</div>
+			<div class="col-md-4">
+				<h5 class="color-text-gray">CPF</h5>
+				<h4 class="color-text-blue">324.564.038-00</h4>
+			</div>
+			<div class="col-md-3">
+				<h5 class="color-text-gray">Nome</h5>	
+				<h4 class="color-text-blue">Rodrigo Burattini</h4>
+			</div>
+			<div class="col-md-1 text-center margin-top-9">
+				<h3><span class="glyphicon glyphicon-chevron-right color-text-blue"></span></h3>	
+			</div>
+		</div>
+		<div id="editarParticipante" class="panel-collapse collapse">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<h3 class="titulo color-text-gray">Editar Participante<span class="line-sub"></span></h3>
+					<ul class="nav nav-tabs" role="tablist">
+						<li class="active"><a href="#dadosPessoais" role="tab" data-toggle="tab">Dados Pessoais</a></li>
+						<li><a href="#dadosConjuge" role="tab" data-toggle="tab">Dados do Cônjuge</a></li>
+						<li><a href="#dadosResidenciais" role="tab" data-toggle="tab">Dados Residênciais</a></li>
+						<li><a href="#porcentagem" role="tab" data-toggle="tab" class="hide">% de Propriedade e Comp. Renda</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+   </div>
+</body>
+</html>

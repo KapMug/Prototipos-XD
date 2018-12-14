@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" href="css/styles_1024.css" type="text/css">
+<link rel="stylesheet" href="css/styles_800.css" type="text/css">
+<script type="text/javascript" language="javascript" src="js/jquery-2.1.1.min.js" ></script>
+
+ <script>
+ 
+ $(document).ready(function() {
+
+$("#estado_civil").change(function(){
+	
+			var estado = $("#estado_civil").val();	
+			
+
+			if(estado == "1" || estado == "9"){
+							$("#bl_conjuge").show();
+				
+			} else{
+				$("#bl_conjuge").hide();
+			}
+				
+		});
+		
+		 }); 
+	
+	</script>
+
+<title>Protótipo Santander - Simulador / Originação</title>
+</head>
+
+<body>
+
+<table cellspacing="0" cellpadding="0" width="100%" border="0" class="header">
+  <tr>
+    <td valign="middle" class="bgLogo">
+      <img width="280" height="1" src="images/transp.gif" />
+    </td>
+    <td width="100%" valign="top">&nbsp;</td>
+  </tr>
+</table>
+
+    <div id="divAguarde" class="Section" style="width:800px; padding-bottom:30px">
+    
+        <table class="MainFrame" style="width:100%">
+            <tr>
+                <td>	                     
+                    <div class="titulo">
+                        <div class="espacoTitulo"></div>
+                        	Acesso
+                    </div>
+                    
+                    
+                     <div class="bl_proponente">
+                   <div class="SectionTitle">Área Administrativa do Fornecedor</div>                  
+                              
+
+                   <div class="separacaoEmpVerde">
+			                        <img src="images/transp.gif" width="1" height="1"/>
+		                      </div> 
+                              
+                               <label style="font-size:11px; color:#333; width:50px; display:inline-block">Canal:</label>
+                                <select style="font-size:11px; color:#333">
+                      <option>Nenhum</option>
+                     
+                    </select>
+                    
+                    <label style="font-size:11px; color:#333; width:70px; display:inline-block">Fornecedor:</label>
+                                <select style="font-size:11px; color:#333">
+                      <option>Nenhum</option>
+                     
+                    </select>
+                    
+                    
+                    <div class="separacaoEmpVerde">
+			                        <img src="images/transp.gif" width="1" height="1"/>
+		                      </div> 
+                              
+                               <label style="font-size:11px; color:#333; width:50px; display:inline-block">Região:</label>
+                                <select style="font-size:11px; color:#333">
+                      <option>Nenhum</option>
+                     
+                    </select>
+                    
+                     <label style="font-size:11px; color:#333; width:70px; display:inline-block">Regional:</label>
+                                <select style="font-size:11px; color:#333">
+                      <option>Nenhum</option>
+                     
+                    </select>
+                    <div class="separacaoEmpVerde">
+			                        <img src="images/transp.gif" width="1" height="1"/>
+		                      </div> 
+                              
+                               <label style="font-size:11px; color:#333; width:50px; display:inline-block">Ponto de Venda:</label>
+                                <select style="font-size:11px; color:#333">
+                      <option>Nenhum</option>
+                     
+                    </select>
+                            
+                       
+                    
+                    	
+                              
+                                                  
+                              
+                     </div>
+                    
+                    
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                   <div class="rodapeTelas" style="clear:left; margin-top:20px">
+                   
+          
+          <table border="0" cellspacing="0" cellpadding="0" class="ajuste_rodape">
+                    <tr>
+                      <td>
+                      <a type="button"  href="resumo_proposta.html" style="text-decoration:none">
+<table border="0" 
+           
+                                cellspacing="0" 
+                                cellpadding="0" 
+                                class="botaoRodapeBordaLeft bt_guardar" 
+                                style="margin-left:0"
+                               >
+                                    <tr>
+                                        <td>
+                                       
+                                            <div 
+                                                 class="botaoRodape" style="font-size:11px; font-weight:bold; width:120px">
+                                            
+                                               Voltar
+                                              
+                                                  <div class="correcaominwidth"></div>
+                                              
+                                            </div>
+                                        </td>
+                                    </tr>
+              </table>
+              </a>
+                      
+              <a type="button"  href="pre_simulador.html" style="text-decoration:none">
+<table border="0" 
+           
+                                cellspacing="0" 
+                                cellpadding="0" 
+                                class="botaoRodapeBordaRight bt_guardar"
+                                style="margin-right:0" 
+                               >
+                                    <tr>
+                                        <td>
+                                       
+                                            <div 
+                                                 class="botaoRodape" style="font-size:11px; font-weight:bold; width:120px">
+                                            
+                                               Continuar
+                                              
+                                                  <div class="correcaominwidth"></div>
+                                              
+                                            </div>
+                                        </td>
+                                    </tr>
+              </table>
+              </a>
+              
+              
+                      </td>
+                      </tr>
+                      </table>
+                      </div>
+                </td>
+            </tr>
+        </table>    
+    
+    </div>
+
+
+
+<table cellspacing="0" cellpadding="0" width="100%" border="0" style="bottom:0; position: fixed; display:">
+	<tr>
+    <td align="left"><div class="rodapeCliente"></div></td>
+    <td width="100%" align="center" class="rodapeClienteDegrade"><div class="rodapeClienteImagemDegrade"></div></td>
+    <td align="right"><div class="rodapeClienteDireita"></div></td>
+  </tr>
+</table>
+
+
+</body>
+</html>

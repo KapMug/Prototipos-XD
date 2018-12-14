@@ -1,0 +1,636 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cadastro da Proposta</title>
+<script language="javascript" type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/bootstrap.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/comum.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css" />
+
+</head>
+
+<body>
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container">
+			<div class="navbar-header pull-left navbar-margin-elements">
+				<img src="img/marca-vivere-50.png">
+			</div>
+			<div class="navbar-header pull-right navbar-margin-elements width-200" style="margin-top:17px">
+				<img class="pull-right" src="img/foto-usuario.png">
+				<p class="pull-right text-right navbar-text-margin color-text-blue"><strong>Ricardo da Silva</strong></p>
+				<p class="pull-right text-right navbar-text-margin color-text-gray">Consultor</p>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="info-cliente">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td width="200">
+						<h4 class="color-text-white">Rodrigo Burattini</h4>
+						<h5 class="color-text-white">324.564.038-00</h5>
+					</td>
+					<td width="200">
+						<h4 class="color-text-white">27/07/1984</h4>
+						<h5 class="color-text-white">Pessoa Física</h5>
+					</td>
+					<td width="200">
+						<h4 class="color-text-white">rodrigo.burattini@viverebrasil.com.br</h4>
+						<h5 class="color-text-white">(11) 98133-3329</h5>
+					</td>
+				</tr>
+			</table>
+	
+		</div>
+	</div>
+	<div class="container">
+		<h2 class="titulo color-text-gray">Cadastro da Proposta<span class="line"></span></h2>
+        <div class="panel panel-default" style="margin-top:20px">
+			<div class="panel-body">
+            	<form class="form-inline">
+  					<div class="form-group" >
+                    	<label for="#">Prazo:</label>
+						<input type="text" class="form-control" style="width:100px" value="168">	
+                    </div>
+                    <div class="form-group" style="margin-left:15px">
+                    	<label for="#">Valor Financiado:</label>
+						<input type="text" class="form-control" style="width:100px" value="120.000,00">	
+                    </div>
+                    <div class="form-group " style="margin-left:15px">
+                    	<label for="#">Prestação:</label>
+						<input type="text" class="form-control" style="width:100px" value="1.668,68">	
+                    </div>
+                    <div class="form-group" style="margin-left:15px">
+                    	<label for="#">Taxa de Juros:</label>
+						<input type="text" class="form-control" disabled style="width:100px" value="9,02134">	
+                    </div>
+                    <div class="form-group pull-right">
+                    	<a href="4_resultadoSimulacao.html" type="button" class="btn btn-primary ">Calcular</a>	
+                    </div>
+                </form>	
+            </div>
+        </div>
+		<h4 class="color-text-gray" style="margin-top:25px; margin-bottom:10px;">Participantes</h4>
+		<div class="box-accordion" name="accordionCadastro" data-toggle="collapse" data-parent="#accordion" href="#editarParticipante">
+			<div class="col-md-4">
+				<h5 class="color-text-gray">Qualificação</h5>
+				<h4 class="color-text-blue">Comprador</h4>	
+			</div>
+			<div class="col-md-4">
+				<h5 class="color-text-gray">CPF</h5>
+				<h4 class="color-text-blue">324.564.038-00</h4>
+			</div>
+			<div class="col-md-3">
+				<h5 class="color-text-gray">Nome</h5>	
+				<h4 class="color-text-blue">Rodrigo Burattini</h4>
+			</div>
+			<div class="col-md-1 text-center margin-top-9">
+				<h3><span class="glyphicon glyphicon-chevron-right color-text-blue"></span></h3>	
+			</div>
+		</div>
+		<div id="editarParticipante" class="panel-collapse collapse">
+			<div class="panel panel-default" style="clear:both">
+				<div class="panel-body">
+					<h3 class="titulo color-text-gray">Editar Participante<span class="line-sub"></span></h3>
+					<ul class="nav nav-tabs" role="tablist">
+						<li class="active"><a href="#dadosPessoais" role="tab" data-toggle="tab">Dados Pessoais</a></li>
+						<li><a href="#dadosConjuge" role="tab" data-toggle="tab">Dados do Cônjuge</a></li>
+						<li><a href="#dadosResidenciais" role="tab" data-toggle="tab">Dados Residênciais</a></li>
+						<li><a href="#porcentagem" role="tab" data-toggle="tab" class="hide">% de Propriedade e Comp. Renda</a></li>
+					</ul>
+					<div class="tab-content" style="min-height:300px">
+						<div class="tab-pane fade in  active" id="dadosPessoais">
+							<div class="form-group" style="margin-top:20px;"> 
+							<div style="margin-left:0; width:100%" class="col-sm-10 form-group">
+								<div class="col-sm-3">
+									<label for="#">Qualificação</label>
+									<select class="form-control">
+										<option value=""></option>	
+										<option>Comprador</option>
+										<option>Procurador</option>
+										<option>Devedor Solidário</option>
+										<option>Interveniente Quitante</option>
+										<option>Instituição Financeira Originadora</option>
+										<option>Anuente</option>
+										<option>Procurador</option>
+										<option>Fiador</option>
+										<option>Vendedor</option>
+									</select>
+								</div>
+								<div class="col-sm-3">
+									<label for="#">CPF</label>
+									<input type="text" class="form-control" value="324.564.038-00">
+								</div>
+								<div class="col-sm-6">
+									<label for="#">Nome Completo</label>
+									<input type="text" class="form-control" value="Rodrigo Burattini">
+								</div>
+							</div>
+							<div style="margin-left:0; width:100%" class="col-sm-10 form-group">
+								<div class="col-sm-2">
+									<label for="#">Data de Nascimento</label>
+									<input type="text" class="form-control" value="11/10/1983">
+								</div>
+                                <div class="col-sm-3">
+									<label for="#">Sexo</label>
+									<select class="form-control">
+										<option value="masculino">masculino</option>	
+										<option>masculino</option>
+										<option>feminino</option>
+									</select>
+								</div>
+                                <div class="col-sm-2">
+									<label>Estado Civil</label>
+									<select class="form-control">
+                                    	<option value="solteiro">solteiro</option>	
+                                    </select>
+								</div>
+								<div class="col-sm-3">
+									<label for="#">Regime de Comunhão</label>
+									<select class="form-control"></select>
+								</div>
+								<div class="col-sm-2">
+									<label for="#">Data do Casamento</label>
+									<input type="text" class="form-control">
+								</div>
+							</div>
+							<div style="margin-left:0; width:100%" class="col-sm-10 form-group">
+								<div class="col-sm-3">
+									<label for="#">Nacionalidade</label>
+									<select class="form-control"></select>
+								</div>
+								<div class="col-sm-2">
+									<label for="#">Tipo de Documento</label>
+									<select class="form-control"></select>
+								</div>
+								<div class="col-sm-3">
+									<label for="#">Nº Doc</label>
+									<input type="text" class="form-control">
+								</div>
+								<div class="col-sm-1">
+									<label>&nbsp;</label>
+									<input type="text" class="form-control">
+								</div>
+							</div>
+							
+						</div>	
+						</div>
+						<div class="tab-pane fade" id="dadosConjuge">
+							<div class="form-group" style="margin-top:20px;"> 
+								<div style="margin-left:0; width:100%" class="col-sm-10 form-group">
+									<div class="col-sm-3">
+										<label for="#">CPF</label>
+										<input type="text" class="form-control">
+									</div>
+									<div class="col-sm-9">
+										<label for="#">Nome Completo</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+								<div style="margin-left:0; width:100%" class="col-sm-10 form-group">
+									<div class="col-sm-3">
+										<label for="#">Data de Nascimento</label>
+										<input type="text" class="form-control">
+									</div>
+									<div class="col-sm-3">
+										<label for="#">% de Propriedade</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+							</div>	
+			
+			
+						</div>
+						<div class="tab-pane fade" id="dadosResidenciais">
+							<div class="form-group" style="margin-top:20px;"> 
+								<div style="margin-left:0; width:100%" class="col-sm-10 form-group">
+									<div class="col-sm-3">
+										<label for="#">CEP</label>
+										<input type="text" class="form-control">
+									</div>
+									<div class="col-sm-3">
+										<label for="#">Tipo de Logradouro</label>
+										<input type="text" class="form-control">
+									</div>
+									<div class="col-sm-6">
+										<label for="#">Endereço</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+								<div style="margin-left:0; width:100%" class="col-sm-10 form-group">
+									<div class="col-sm-1">
+										<label for="#">Nº</label>
+										<input type="text" class="form-control">
+									</div>
+									<div class="col-sm-3">
+										<label for="#">Complemento</label>
+										<input type="text" class="form-control">
+									</div>
+									<div class="col-sm-3">
+										<label for="#">Bairro</label>
+										<input type="text" class="form-control">
+									</div>
+									<div class="col-sm-3">
+										<label for="#">Cidade</label>
+										<input type="text" class="form-control">
+									</div>
+									<div class="col-sm-2">
+										<label for="#">UF</label>
+										<select class="form-control"></select>
+									</div>
+								</div>
+								<div style="margin-left:0; width:100%" class="col-sm-10 form-group">
+									<div class="col-sm-3">
+										<label for="#">Telefone</label>
+										<input type="text" class="form-control">
+									</div>
+									<div class="col-sm-3">
+										<label for="#">Celular</label>
+										<input type="text" class="form-control">
+									</div>
+									<div class="col-sm-6">
+										<label for="#">Email</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+							</div>	
+						</div>
+						<div class="tab-pane fade" id="porcentagem">
+							<div class="form-group" style="margin-top:20px;"> 
+								<div style="margin-left:0; width:100%" class="col-sm-10 form-group">
+									<div class="col-sm-2">
+										<label for="#">% de Propriedade</label>
+										<input type="text" class="form-control">
+									</div>
+									<div class="col-sm-2">
+										<label for="#">% de Renda</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="box-accordion" name="accordionCadastro" data-toggle="collapse" data-parent="#accordion" href="#editarParticipante2">
+			<div class="col-md-4">
+				<h4 class="color-text-blue margin-top-22">Vendedor</h4>	
+			</div>
+			<div class="col-md-4">
+				<h4 class="color-text-blue margin-top-22">321.230.318-28</h4>
+			</div>
+			<div class="col-md-3">	
+				<h4 class="color-text-blue margin-top-22">Silvio Siqueira</h4>
+			</div>
+			<div class="col-md-1 text-center margin-top-9">
+				<h3><span class="glyphicon glyphicon-chevron-right color-text-blue"></span></h3>	
+			</div>
+		</div>
+		<div id="editarParticipante2" class="panel-collapse collapse">
+			<div class="panel panel-default" style="clear:both">
+				<div class="panel-body">
+					<h3 class="titulo color-text-gray">Editar Participante<span class="line-sub"></span></h3>
+					<ul class="nav nav-tabs" role="tablist">
+						<li class="active"><a href="#dadosPessoais2" role="tab" data-toggle="tab">Dados Pessoais</a></li>
+						<li><a href="#dadosConjuge2" role="tab" data-toggle="tab">Dados do Cônjuge</a></li>
+						<li><a href="#dadosResidenciais2" role="tab" data-toggle="tab">Dados Residênciais</a></li>
+						<li><a href="#porcentagem2" role="tab" data-toggle="tab" class="hide">% de Propriedade e Comp. Renda</a></li>
+					</ul>
+					<div class="tab-content" style="min-height:300px">
+						<div class="tab-pane fade in  active" id="dadosPessoais2">
+							<div class="form-group" style="margin-top:20px;"> 
+							<div style="margin-left:0; width:100%" class="col-sm-10 form-group">
+								<div class="col-sm-3">
+									<label for="#">Qualificação</label>
+									<select class="form-control">
+										<option value=""></option>	
+										<option>Comprador</option>
+										<option>Procurador</option>
+										<option>Devedor Solidário</option>
+										<option>Interveniente Quitante</option>
+										<option>Instituição Financeira Originadora</option>
+										<option>Anuente</option>
+										<option>Procurador</option>
+										<option>Fiador</option>
+										<option>Vendedor</option>
+									</select>
+								</div>
+								<div class="col-sm-3">
+									<label for="#">CPF</label>
+									<input type="text" class="form-control" value="321.230.318-28">
+								</div>
+								<div class="col-sm-6">
+									<label for="#">Nome Completo</label>
+									<input type="text" class="form-control" value="Silvio Siqueira">
+								</div>
+							</div>
+							<div style="margin-left:0; width:100%" class="col-sm-10 form-group">
+								<div class="col-sm-2">
+									<label for="#">Data de Nascimento</label>
+									<input type="text" class="form-control" value="29/07/1992">
+								</div>
+                                <div class="col-sm-3">
+									<label for="#">Sexo</label>
+									<select class="form-control">
+										<option value="masculino">masculino</option>	
+										<option>masculino</option>
+										<option>feminino</option>
+									</select>
+								</div>
+                                <div class="col-sm-2">
+									<label>Estado Civil</label>
+									<select class="form-control">
+                                    	<option value="solteiro">solteiro</option>	
+                                    </select>
+								</div>
+								<div class="col-sm-3">
+									<label for="#">Regime de Comunhão</label>
+									<select class="form-control"></select>
+								</div>
+								<div class="col-sm-2">
+									<label for="#">Data do Casamento</label>
+									<input type="text" class="form-control">
+								</div>
+							</div>
+							<div style="margin-left:0; width:100%" class="col-sm-10 form-group">
+								<div class="col-sm-3">
+									<label for="#">Nacionalidade</label>
+									<select class="form-control"></select>
+								</div>
+								<div class="col-sm-2">
+									<label for="#">Tipo de Documento</label>
+									<select class="form-control"></select>
+								</div>
+								<div class="col-sm-3">
+									<label for="#">Nº Doc</label>
+									<input type="text" class="form-control">
+								</div>
+								<div class="col-sm-1">
+									<label>&nbsp;</label>
+									<input type="text" class="form-control">
+								</div>
+							</div>
+							
+						</div>	
+						</div>
+						<div class="tab-pane fade" id="dadosConjuge2">
+							<div class="form-group" style="margin-top:20px;"> 
+								<div style="margin-left:0; width:100%" class="col-sm-10 form-group">
+									<div class="col-sm-3">
+										<label for="#">CPF</label>
+										<input type="text" class="form-control">
+									</div>
+									<div class="col-sm-9">
+										<label for="#">Nome Completo</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+								<div style="margin-left:0; width:100%" class="col-sm-10 form-group">
+									<div class="col-sm-3">
+										<label for="#">Data de Nascimento</label>
+										<input type="text" class="form-control">
+									</div>
+									<div class="col-sm-3">
+										<label for="#">% de Propriedade</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+							</div>	
+			
+			
+						</div>
+						<div class="tab-pane fade" id="dadosResidenciais2">
+							<div class="form-group" style="margin-top:20px;"> 
+								<div style="margin-left:0; width:100%" class="col-sm-10 form-group">
+									<div class="col-sm-3">
+										<label for="#">CEP</label>
+										<input type="text" class="form-control">
+									</div>
+									<div class="col-sm-3">
+										<label for="#">Tipo de Logradouro</label>
+										<input type="text" class="form-control">
+									</div>
+									<div class="col-sm-6">
+										<label for="#">Endereço</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+								<div style="margin-left:0; width:100%" class="col-sm-10 form-group">
+									<div class="col-sm-1">
+										<label for="#">Nº</label>
+										<input type="text" class="form-control">
+									</div>
+									<div class="col-sm-3">
+										<label for="#">Complemento</label>
+										<input type="text" class="form-control">
+									</div>
+									<div class="col-sm-3">
+										<label for="#">Bairro</label>
+										<input type="text" class="form-control">
+									</div>
+									<div class="col-sm-3">
+										<label for="#">Cidade</label>
+										<input type="text" class="form-control">
+									</div>
+									<div class="col-sm-2">
+										<label for="#">UF</label>
+										<select class="form-control"></select>
+									</div>
+								</div>
+								<div style="margin-left:0; width:100%" class="col-sm-10 form-group">
+									<div class="col-sm-3">
+										<label for="#">Telefone</label>
+										<input type="text" class="form-control">
+									</div>
+									<div class="col-sm-3">
+										<label for="#">Celular</label>
+										<input type="text" class="form-control">
+									</div>
+									<div class="col-sm-6">
+										<label for="#">Email</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+							</div>	
+						</div>
+						<div class="tab-pane fade" id="porcentagem2">
+							<div class="form-group" style="margin-top:20px;"> 
+								<div style="margin-left:0; width:100%" class="col-sm-10 form-group">
+									<div class="col-sm-2">
+										<label for="#">% de Propriedade</label>
+										<input type="text" class="form-control">
+									</div>
+									<div class="col-sm-2">
+										<label for="#">% de Renda</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        <a href="7_8-2_novoParticipante.html" type="button" class="btn btn-primary" style="margin:15px 0 0">Adicionar Novo Participante</a>
+		<h4 class="color-text-gray" style="margin-top:10px; margin-bottom:10px;">Imóveis</h4>
+        
+		<div class="box-accordion" name="accordionCadastro" data-toggle="collapse" data-parent="#accordion" href="#editarImovel">
+			<div class="col-md-4">
+				<h5 class="color-text-gray">CEP</h5>
+				<h4 class="color-text-blue">01446-040</h4>
+			</div>
+			<div class="col-md-4">
+				<h5 class="color-text-gray">Endereço</h5>
+				<h4 class="color-text-blue">Rua Espanha, 162</h4>
+			</div>
+			<div class="col-md-3">
+				<h5 class="color-text-gray">Tipo do Imóvel</h5>	
+				<h4 class="color-text-blue">Casa</h4>
+			</div>
+			<div class="col-md-1 text-center margin-top-9">
+				<h3><span class="glyphicon glyphicon-chevron-right color-text-blue"></span></h3>	
+			</div>
+		</div>
+		<div id="editarImovel" class="panel-collapse collapse">
+			<div class="panel panel-default" style="clear:both">
+				<div class="panel-body">
+					<h3 class="titulo color-text-gray">Editar Imóvel<span class="line-sub"></span></h3>
+					<ul class="nav nav-tabs" role="tablist">
+						<li class="active"><a href="#dadosImovel" role="tab" data-toggle="tab">Dados do Imóvel</a></li>
+						<li><a href="#dadosRegistro" role="tab" data-toggle="tab" class="hide">Dados do Registro</a></li>
+						<li><a href="#tituloAquisitivo" role="tab" data-toggle="tab" class="hide">Título Aquisitivo</a></li>
+						<li><a href="#percentualPropriedade" role="tab" data-toggle="tab">Percentual de Propriedade</a></li>
+					</ul>
+					<div class="tab-content" style="min-height:230px">
+						<div class="tab-pane fade in  active" id="dadosImovel">
+							<div class="form-group" style="margin-top:20px;"> 
+							<div style="margin-left:0; width:100%" class="col-sm-10 form-group">
+								<div class="col-sm-2">
+									<label for="#">CEP</label>
+									<input type="text" class="form-control" value="01446-040">
+								</div>
+								<div class="col-sm-5">
+									<label for="#">Endereço</label>
+									<input type="text" class="form-control" value="Rua Espanha">
+								</div>
+								<div class="col-sm-1">
+									<label for="#">Nº</label>
+									<input type="text" class="form-control" value="162">
+								</div>
+								<div class="col-sm-4">
+									<label for="#">Complemento</label>
+									<input type="text" class="form-control">
+								</div>
+							</div>
+							<div style="margin-left:0; width:100%" class="col-sm-10 form-group">
+								<div class="col-sm-4">
+									<label for="#">Bairro</label>
+									<input type="text" class="form-control">
+								</div>
+								<div class="col-sm-3">
+									<label for="#">Cidade</label>
+									<input type="text" class="form-control">
+								</div>
+								<div class="col-sm-1">
+									<label for="#">UF</label>
+									<select class="form-control"></select>
+								</div>
+								<div class="col-sm-4">
+									<label for="#">Contato</label>
+									<input type="text" class="form-control">
+								</div>
+							</div>
+							<div style="margin-left:0; width:100%" class="col-sm-10 form-group">
+								<div class="col-sm-3">
+									<label for="#">Telefone</label>
+									<input type="text" class="form-control">
+								</div>
+								<div class="col-sm-1">
+									<label for="#">Ramal</label>
+									<input type="text" class="form-control">
+								</div>
+								<div class="col-sm-4">
+									<label for="#">Tipo do Imóvel</label>
+									<select class="form-control"></select>
+								</div>
+								<div class="col-sm-4">
+									<label for="#">Uso do Imóvel</label>
+									<select class="form-control"></select>
+								</div>
+							</div>
+						</div>	
+						</div>
+						<div class="tab-pane fade" id="dadosRegistro">
+							<div class="form-group" style="margin-top:20px;"> 
+								<div style="margin-left:0; width:100%" class="col-sm-10 form-group">
+									<div class="col-sm-3">
+										<label for="#">Código</label>
+										<input type="text" class="form-control">
+									</div>
+									<div class="col-sm-9">
+										<label for="#">Cartório</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+								<div style="margin-left:0; width:100%" class="col-sm-10 form-group">
+									<div class="col-sm-3">
+										<label for="#">Matrícula</label>
+										<input type="text" class="form-control">
+									</div>
+									<div class="col-sm-3">
+										<label for="#">Nº IPTU</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+							</div>	
+			
+						</div>
+						<div class="tab-pane fade" id="tituloAquisitivo">
+							<div class="form-group" style="margin-top:20px;"> 
+								<div style="margin-left:0; width:100%" class="col-sm-10 form-group">
+									<div class="col-sm-4">
+										<label for="#">Número do Registro de Aquisição</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+							</div>	
+						</div>
+						<div class="tab-pane fade" id="percentualPropriedade">
+							<table class="tabelaSimples" width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-top:10px">
+								<thead>
+									<tr>
+										<td>%</td>
+										<td>CPF/CNPJ</td>
+										<td>Comprador</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><input type="text" class="form-control" value="50,00" style="width:70px"></td>
+										<td>842.802.129-53</td>
+										<td>MARCOS ANTONIO DE CARVALHO </td>
+									</tr>
+									<tr>
+										<td><input type="text" class="form-control" value="50,00" style="width:70px"></td>
+										<td>005.032.889-18</td>
+										<td>SONIA APARECIDA DE CARVALHO </td>
+									</tr>
+								</tbody>
+							</table>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<a href="7_8-3_novoImovel.html" type="button" class="btn btn-primary" style="margin:15px 0 0">Adicionar Novo Imóvel</a>
+		<a href="9_confirmacaoChecklist.html" type="button" class="btn btn-primary pull-right" style="margin:15px 0 0">Enviar Proposta</a>
+        <a href="#" type="button" class="btn btn-primary pull-right" style="margin:15px 5px 0">Guardar</a>
+        <a href="#" type="button" class="btn btn-primary pull-right" style="margin:15px 0 0">Cancelar</a>
+	</div>
+</body>
+</html>

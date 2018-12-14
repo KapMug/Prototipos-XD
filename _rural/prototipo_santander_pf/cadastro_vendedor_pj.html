@@ -1,0 +1,724 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" href="css/styles_1024.css" type="text/css">
+<link rel="stylesheet" href="css/styles_800.css" type="text/css">
+<script type="text/javascript" language="javascript" src="js/jquery-2.1.1.min.js" ></script>
+
+ <script>
+ 
+ $(document).ready(function() {
+
+$("#estado_civil").change(function(){
+	
+			var estado = $("#estado_civil").val();	
+			
+
+			if(estado == "1" || estado == "9"){
+							$("#bl_conjuge").show();
+				
+			} else{
+				$("#bl_conjuge").hide();
+			}
+				
+		});
+		
+		 }); 
+	
+	</script>
+
+<title>Protótipo Santander - Simulador / Originação</title>
+</head>
+
+<body>
+
+<table cellspacing="0" cellpadding="0" width="100%" border="0" class="header">
+  <tr>
+    <td valign="middle" class="bgLogo">
+      <img width="280" height="1" src="images/transp.gif" />
+    </td>
+    <td width="100%" valign="top">&nbsp;</td>
+  </tr>
+</table>
+
+    <div id="divAguarde" class="Section" style="width:800px; padding-bottom:30px">
+    
+        <table class="MainFrame" style="width:100%">
+            <tr>
+                <td>	                     
+                    <div class="titulo">
+                        <div class="espacoTitulo"></div>
+                        	Cadastro Pessoa Jurídica Vendedor
+                    </div>
+                    <div class="st_proposta">
+                     <div class="separacaoEmpVerde">
+			                        <img src="images/transp.gif" width="1" height="1"/>
+		                      </div> 
+                              <div>	
+                             <label style="font-weight:bold">Preencha na ordem:</label> 
+                             <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>
+    <a type="button"  href="#" style="text-decoration:none; cursor:default">
+<table border="0" 
+           
+                                cellspacing="0" 
+                                cellpadding="0" 
+                                class="botaoRodapeBordaLeft bt_guardar" 
+                                style="margin-left:0"
+                               >
+                                    <tr>
+                                        <td>
+                                       
+                                            <div 
+                                                 class="botaoRodape" style="font-size:11px; font-weight:bold; width:171px; cursor:default">
+                                            
+                                               Dados
+                                              
+                                                  <div class="correcaominwidth"></div>
+                                              
+                                            </div>
+                                        </td>
+                                    </tr>
+              </table>
+              </a>
+              
+              <a type="button"  href="#" style="text-decoration:none; cursor: default">
+<table border="0" 
+           
+                                cellspacing="0" 
+                                cellpadding="0" 
+                                class="botaoRodapeBordaLeft bt_guardar" 
+                                style="margin-left:0"
+                               >
+                                    <tr>
+                                        <td>
+                                       
+                                            <div 
+                                                 class="botaoRodape" style="font-size:11px; font-weight:bold; width:171px; background-color:#999; cursor:default">
+                                            
+                                               Procurador/Representane
+                                              
+                                                  <div class="correcaominwidth"></div>
+                                              
+                                            </div>
+                                        </td>
+                                    </tr>
+              </table>
+              </a>
+              <a type="button"  href="#" style="text-decoration:none; cursor: default">
+<table border="0" 
+           
+                                cellspacing="0" 
+                                cellpadding="0" 
+                                class="botaoRodapeBordaLeft bt_guardar" 
+                                style="margin-left:0"
+                               >
+                                    <tr>
+                                        <td>
+                                       
+                                            <div 
+                                                 class="botaoRodape" style="font-size:11px; font-weight:bold; width:171px; background-color:#999; cursor:default">
+                                            
+                                               C/C para débito
+                                              
+                                                  <div class="correcaominwidth"></div>
+                                              
+                                            </div>
+                                        </td>
+                                    </tr>
+              </table>
+              </a>
+    </td>
+  </tr>
+</table>
+
+                             </div>
+                              
+                    </div>
+                    
+                     <div class="bl_proponente">
+                   <div class="sub_titulo_bl">
+                        <div class="espacoTitulo"></div>
+                        	Dados da Empresa
+                    </div>
+                   <!-- <label style="font-size:11px; color:#333">Comprador Principal:</label>
+                    <select style="font-size:11px; color:#333" class="lb-fieldRequired">
+                      <option>Nenhum</option>
+                      <option>Sim</option>
+                      <option>Não</option>
+                    </select>
+                    <div class="separacaoEmpVerde">
+			                        <img src="images/transp.gif" width="1" height="1"/>
+                       </div>  -->
+                              <label style="font-size:11px; color:#333">CNPJ:</label>
+                       <input size="15" type="text" style="font-size:11px; color:#333" class="lb-fieldRequired"/>                       
+                              <label style="font-size:11px; color:#333">Razão Social:</label>	
+                       <input size="11" type="text" style="font-size:11px; color:#333; width:531px" class="lb-fieldRequired"/>
+                              
+                              <div class="separacaoEmpVerde">
+			                        <img src="images/transp.gif" width="1" height="1"/>
+		                      </div> 	
+                    <label style="font-size:11px; color:#333">Tipo de Empresa:</label>
+                    <select style="font-size:11px; color:#333">
+                      <option>Nenhum</option>
+                      <option>Masculino</option>
+                      <option>Feminino</option>
+                    </select>
+                             
+                    </select>
+                   
+                    <div class="separacaoEmpVerde">
+			                        <img src="images/transp.gif" width="1" height="1"/>
+		                      </div> 	
+                              <input name="" type="checkbox" value="" />
+                              <label style="font-size:11px; color:#333">possui procuraror ou representande legal</label>
+                     </div>
+                    <div class="bl_endereco">
+                    <div class="separacaoEmpVerde" style="margin-top:20px">
+			                        <img src="images/transp.gif" width="1" height="1"/>
+                      </div> 
+                    <div class="sub_titulo_bl">
+                        <div class="espacoTitulo"></div>
+                        	Dados Residenciais
+                    </div>
+                    <label style="font-size:11px; color:#333; width:50px; display: inline-block">CEP:</label>
+                       <input size="9" type="text" style="font-size:11px; color:#333; width:158px" />
+                        <label style="font-size:11px; color:#333">Tipo de Lougradoro:</label>
+                              <select style="font-size:11px; color:#333">
+                     <option value="">Nenhum</option>
+						
+<option value="2">ALAMEDA</option>
+<option value="2">AVENIDA</option>
+<option value="2">BECO</option>
+<option value="2">BOULEVARD</option>
+<option value="2">CAMINHO</option>
+<option value="2">CAIS</option>
+<option value="2">CAMPO</option>
+<option value="2">ESCADA</option>
+<option value="2">ESTRADA</option>
+<option value="2">FAVELA</option>
+<option value="2">FAZENDA</option>
+<option value="2">FLORESTA</option>
+<option value="2">ILHA</option>
+<option value="2">JARDIM</option>
+<option value="2">LADEIRA</option>
+<option value="2">LARGO</option>
+<option value="2">LOTEAMENTO</option>
+<option value="2">LUGAR</option>
+<option value="2">MORRO</option>
+<option value="2">PARQUE</option>
+<option value="2">PASSEIO</option>
+<option value="2">PRAIA</option>
+<option value="2">PRAÇA</option>
+<option value="2">RECANTO</option>
+<option value="2">RODOVIA</option>
+<option value="2">RUA</option>
+<option value="2">SERVIDAO</option>
+<option value="2">TRAVESSA</option>
+<option value="2">VIA</option>
+<option value="2">VILA</option>
+
+                    </select>
+                    <label style="font-size:11px; color:#333">Endereço:</label>	
+                       <input size="11" type="text" style="font-size:11px; color:#333; width:200px" />
+                     <div class="separacaoEmpVerde">
+			                        <img src="images/transp.gif" width="1" height="1"/>
+                      </div> 
+                              <label style="font-size:11px; color:#333; width:50px; display: inline-block">Número:</label>
+                       <input size="9" type="text" style="font-size:11px; color:#333; width:158px" />
+                       <label style="font-size:11px; color:#333">Complemento:</label>
+                       <input size="9" type="text" style="font-size:11px; color:#333; width:158px" />
+                       <label style="font-size:11px; color:#333">Bairro:</label>
+                       <input size="9" type="text" style="font-size:11px; color:#333; width:158px" />
+                              
+                               <div class="separacaoEmpVerde">
+			                        <img src="images/transp.gif" width="1" height="1"/>
+		                      </div> 
+                              <label style="font-size:11px; color:#333; width:50px; display: inline-block">Estado:</label>
+                             <select style="font-size:11px; color:#333">
+                     <option value="">Nenhum</option>
+						<option value="AC">AC</option>
+					<option value="AL">AL</option>
+					<option value="AM">AM</option>
+					<option value="AP">AP</option>
+					<option value="BA">BA</option>
+					<option value="CE">CE</option>
+					<option value="DF">DF</option>
+					<option value="ES">ES</option>
+					<option value="GO">GO</option>
+					<option value="MA">MA</option>
+					<option value="MG">MG</option>
+					<option value="MS">MS</option>
+					<option value="MT">MT</option>
+					<option value="PA">PA</option>
+					<option value="PB">PB</option>
+					<option value="PE">PE</option>
+					<option value="PI">PI</option>
+					<option value="PR">PR</option>
+					<option value="RJ">RJ</option>
+					<option value="RN">RN</option>
+					<option value="RO">RO</option>
+					<option value="RR">RR</option>
+					<option value="RS">RS</option>
+					<option value="SC">SC</option>
+					<option value="SE">SE</option>
+					<option value="SP">SP</option>
+					<option value="TO">TO</option>
+                    </select>
+                    
+                    <label style="font-size:11px; color:#333">Cidade:</label>
+                    <select style="font-size:11px; color:#333">
+                    <option value="9030">ADAMANTINA</option><option value="9031">ADOLFO</option><option value="9034">AGUAI</option><option value="9035">AGUAS DA PRATA</option><option value="9036">AGUAS DE LINDOIA</option><option value="9037">AGUAS DE SANTA BARBARA</option><option value="9038">AGUAS DE SAO PEDRO</option><option value="9039">AGUDOS</option><option value="9042">ALAMBARI</option><option value="9047">ALFREDO MARCONDES</option><option value="9048">ALTAIR</option><option value="9049">ALTINOPOLIS</option><option value="9050">ALTO ALEGRE</option><option value="9052">ALUMINIO</option><option value="9053">ALVARES FLORENCE</option><option value="9054">ALVARES MACHADO</option><option value="9055">ALVARO DE CARVALHO</option><option value="9056">ALVINLANDIA</option><option value="9060">AMERICANA</option><option value="9061">AMERICO BRASILIENSE</option><option value="9062">AMERICO DE CAMPOS</option><option value="9063">AMPARO</option><option value="9065">ANALANDIA</option><option value="9068">ANDRADINA</option><option value="9069">ANGATUBA</option><option value="9070">ANHEMBI</option><option value="9071">ANHUMAS</option><option value="9073">APARECIDA</option><option value="9074">APARECIDA D'OESTE</option><option value="9078">APIAI</option><option value="9083">ARACARIGUAMA</option><option value="9084">ARACATUBA</option><option value="9085">ARACOIABA DA SERRA</option><option value="9086">ARAMINA</option><option value="9087">ARANDU</option><option value="9088">ARAPEI</option><option value="9089">ARARAQUARA</option><option value="9090">ARARAS</option><option value="9093">ARCO-IRIS</option><option value="9094">AREALVA</option><option value="9095">AREIAS</option><option value="9096">AREIOPOLIS</option><option value="9097">ARIRANHA</option><option value="9100">ARTUR NOGUEIRA</option><option value="9101">ARUJA</option><option value="9102">ASPASIA</option><option value="9103">ASSIS</option><option value="9105">ATIBAIA</option><option value="9107">AURIFLAMA</option><option value="9108">AVAI</option><option value="9109">AVANHANDAVA</option><option value="9110">AVARE</option><option value="9114">BADY BASSITT</option><option value="9117">BALBINOS</option><option value="9118">BALSAMO</option><option value="9119">BANANAL</option><option value="9122">BARAO DE ANTONINA</option><option value="9124">BARBOSA</option><option value="9125">BARIRI</option><option value="9126">BARRA BONITA</option><option value="9127">BARRA DO CHAPEU</option><option value="9128">BARRA DO TURVO</option><option value="9131">BARRETOS</option><option value="9132">BARRINHA</option><option value="9133">BARUERI</option><option value="9134">BASTOS</option><option value="9135">BATATAIS</option><option value="9138">BAURU</option><option value="9139">BEBEDOURO</option><option value="9142">BENTO DE ABREU</option><option value="9143">BERNARDINO DE CAMPOS</option><option value="9144">BERTIOGA</option><option value="9145">BILAC</option><option value="9146">BIRIGUI</option><option value="9147">BIRITIBA-MIRIM</option><option value="9149">BOA ESPERANCA DO SUL</option><option value="9152">BOCAINA</option><option value="9153">BOFETE</option><option value="9154">BOITUVA</option><option value="9156">BOM JESUS DOS PERDOES</option><option value="9158">BOM SUCESSO DE ITARARE</option><option value="9160">BORA</option><option value="9161">BORACEIA</option><option value="9162">BORBOREMA</option><option value="9163">BOREBI</option><option value="9166">BOTUCATU</option><option value="9169">BRAGANCA PAULISTA</option><option value="9172">BRAUNA</option><option value="9173">BREJO ALEGRE</option><option value="9175">BRODOWSKI</option><option value="9177">BROTAS</option><option value="9179">BURI</option><option value="9180">BURITAMA</option><option value="9181">BURITIZAL</option><option value="9182">CABRALIA PAULISTA</option><option value="9183">CABREUVA</option><option value="9184">CACAPAVA</option><option value="9186">CACHOEIRA PAULISTA</option><option value="9187">CACONDE</option><option value="9188">CAFELANDIA</option><option value="9190">CAIABU</option><option value="9192">CAIEIRAS</option><option value="9193">CAIUA</option><option value="9194">CAJAMAR</option><option value="9195">CAJATI</option><option value="9196">CAJOBI</option><option value="9197">CAJURU</option><option value="9203">CAMPINA DO MONTE ALEGRE</option><option value="9205">CAMPINAS</option><option value="9206">CAMPO LIMPO PAULISTA</option><option value="9208">CAMPOS DO JORDAO</option><option value="9209">CAMPOS NOVOS PAULISTA</option><option value="9210">CANANEIA</option><option value="9211">CANAS</option><option value="9213">CANDIDO MOTA</option><option value="9214">CANDIDO RODRIGUES</option><option value="9216">CANITAR</option><option value="9217">CAPAO BONITO</option><option value="9218">CAPELA DO ALTO</option><option value="9219">CAPIVARI</option><option value="9223">CARAGUATATUBA</option><option value="9224">CARAPICUIBA</option><option value="9226">CARDOSO</option><option value="9229">CASA BRANCA</option><option value="9230">CASSIA DOS COQUEIROS</option><option value="9231">CASTILHO</option><option value="9232">CATANDUVA</option><option value="9233">CATIGUA</option><option value="9236">CEDRAL</option><option value="9237">CERQUEIRA CESAR</option><option value="9238">CERQUILHO</option><option value="9239">CESARIO LANGE</option><option value="9241">CHARQUEADA</option><option value="9242">CHAVANTES</option><option value="9245">CLEMENTINA</option><option value="9247">COLINA</option><option value="9248">COLOMBIA</option><option value="9250">CONCHAL</option><option value="9251">CONCHAS</option><option value="9252">CORDEIROPOLIS</option><option value="9253">COROADOS</option><option value="9255">CORONEL MACEDO</option><option value="9258">CORUMBATAI</option><option value="9259">COSMOPOLIS</option><option value="9260">COSMORAMA</option><option value="9262">COTIA</option><option value="9263">CRAVINHOS</option><option value="9264">CRISTAIS PAULISTA</option><option value="9266">CRUZALIA</option><option value="9267">CRUZEIRO</option><option value="9268">CUBATAO</option><option value="9270">CUNHA</option><option value="9273">DESCALVADO</option><option value="9274">DIADEMA</option><option value="9275">DIRCE REIS</option><option value="9277">DIVINOLANDIA</option><option value="9278">DOBRADA</option><option value="9279">DOIS CORREGOS</option><option value="9280">DOLCINOPOLIS</option><option value="9282">DOURADO</option><option value="9283">DRACENA</option><option value="9284">DUARTINA</option><option value="9285">DUMONT</option><option value="9287">ECHAPORA</option><option value="9289">ELDORADO</option><option value="9291">ELIAS FAUSTO</option><option value="9292">ELISIARIO</option><option value="9294">EMBAUBA</option><option value="9295">EMBU DAS ARTES</option><option value="9296">EMBU-GUACU</option><option value="9297">EMILIANOPOLIS</option><option value="9300">ENGENHEIRO COELHO</option><option value="9306">ESPIRITO SANTO DO PINHAL</option><option value="9307">ESPIRITO SANTO DO TURVO</option><option value="9308">ESTIVA GERBI</option><option value="9309">ESTRELA D'OESTE</option><option value="9310">ESTRELA DO NORTE</option><option value="9311">EUCLIDES DA CUNHA PAULISTA</option><option value="9313">FARTURA</option><option value="9317">FERNANDO PRESTES</option><option value="9318">FERNANDOPOLIS</option><option value="9319">FERNAO</option><option value="9320">FERRAZ DE VASCONCELOS</option><option value="9321">FLORA RICA</option><option value="9322">FLOREAL</option><option value="9324">FLORIDA PAULISTA</option><option value="9326">FLORINIA</option><option value="9327">FRANCA</option><option value="9328">FRANCISCO MORATO</option><option value="9329">FRANCO DA ROCHA</option><option value="9331">GABRIEL MONTEIRO</option><option value="9332">GALIA</option><option value="9333">GARCA</option><option value="9335">GASTAO VIDIGAL</option><option value="9336">GAVIAO PEIXOTO</option><option value="9337">GENERAL SALGADO</option><option value="9338">GETULINA</option><option value="9339">GLICERIO</option><option value="9343">GUAICARA</option><option value="9344">GUAIMBE</option><option value="9345">GUAIRA</option><option value="9347">GUAPIACU</option><option value="9348">GUAPIARA</option><option value="9350">GUARA</option><option value="9351">GUARACAI</option><option value="9352">GUARACI</option><option value="9354">GUARANI D'OESTE</option><option value="9355">GUARANTA</option><option value="9358">GUARARAPES</option><option value="9359">GUARAREMA</option><option value="9360">GUARATINGUETA</option><option value="9361">GUAREI</option><option value="9362">GUARIBA</option><option value="9365">GUARUJA</option><option value="9366">GUARULHOS</option><option value="9367">GUATAPARA</option><option value="9368">GUZOLANDIA</option><option value="9369">HERCULANDIA</option><option value="9370">HOLAMBRA</option><option value="9372">HORTOLANDIA</option><option value="9373">IACANGA</option><option value="9374">IACRI</option><option value="9375">IARAS</option><option value="9376">IBATE</option><option value="9378">IBIRA</option><option value="9379">IBIRAREMA</option><option value="9380">IBITINGA</option><option value="9384">IBIUNA</option><option value="9385">ICEM</option><option value="9387">IEPE</option><option value="9389">IGARACU DO TIETE</option><option value="9391">IGARAPAVA</option><option value="9392">IGARATA</option><option value="9393">IGUAPE</option><option value="9394">ILHA COMPRIDA</option><option value="9396">ILHA SOLTEIRA</option><option value="9397">ILHABELA</option><option value="9399">INDAIATUBA</option><option value="9400">INDIANA</option><option value="9401">INDIAPORA</option><option value="9403">INUBIA PAULISTA</option><option value="9404">IPAUSSU</option><option value="9406">IPERO</option><option value="9407">IPEUNA</option><option value="9408">IPIGUA</option><option value="9409">IPORANGA</option><option value="9410">IPUA</option><option value="9411">IRACEMAPOLIS</option><option value="9413">IRAPUA</option><option value="9414">IRAPURU</option><option value="9415">ITABERA</option><option value="9417">ITAI</option><option value="9419">ITAJOBI</option><option value="9420">ITAJU</option><option value="9421">ITANHAEM</option><option value="9422">ITAOCA</option><option value="9423">ITAPECERICA DA SERRA</option><option value="9424">ITAPETININGA</option><option value="9426">ITAPEVA</option><option value="9427">ITAPEVI</option><option value="9428">ITAPIRA</option><option value="9429">ITAPIRAPUA PAULISTA</option><option value="9430">ITAPOLIS</option><option value="9431">ITAPORANGA</option><option value="9432">ITAPUI</option><option value="9433">ITAPURA</option><option value="9434">ITAQUAQUECETUBA</option><option value="9436">ITARARE</option><option value="9437">ITARIRI</option><option value="9438">ITATIBA</option><option value="9439">ITATINGA</option><option value="9440">ITIRAPINA</option><option value="9441">ITIRAPUA</option><option value="9442">ITOBI</option><option value="9444">ITU</option><option value="9445">ITUPEVA</option><option value="9446">ITUVERAVA</option><option value="9448">JABORANDI</option><option value="9449">JABOTICABAL</option><option value="9451">JACAREI</option><option value="9452">JACI</option><option value="9455">JACUPIRANGA</option><option value="9457">JAGUARIUNA</option><option value="9458">JALES</option><option value="9460">JAMBEIRO</option><option value="9461">JANDIRA</option><option value="9466">JARDINOPOLIS</option><option value="9467">JARINU</option><option value="9469">JAU</option><option value="9470">JERIQUARA</option><option value="9471">JOANOPOLIS</option><option value="9472">JOAO RAMALHO</option><option value="9475">JOSE BONIFACIO</option><option value="9477">JULIO MESQUITA</option><option value="9478">JUMIRIM</option><option value="9479">JUNDIAI</option><option value="9482">JUNQUEIROPOLIS</option><option value="9483">JUQUIA</option><option value="9485">JUQUITIBA</option><option value="9493">LAGOINHA</option><option value="9494">LARANJAL PAULISTA</option><option value="9497">LAVINIA</option><option value="9498">LAVRINHAS</option><option value="9499">LEME</option><option value="9500">LENCOIS PAULISTA</option><option value="9501">LIMEIRA</option><option value="9502">LINDOIA</option><option value="9503">LINS</option><option value="9505">LORENA</option><option value="9506">LOURDES</option><option value="9507">LOUVEIRA</option><option value="9508">LUCELIA</option><option value="9509">LUCIANOPOLIS</option><option value="9510">LUIS ANTONIO</option><option value="9512">LUIZIANIA</option><option value="9513">LUPERCIO</option><option value="9515">LUTECIA</option><option value="9516">MACATUBA</option><option value="9517">MACAUBAL</option><option value="9518">MACEDONIA</option><option value="9520">MAGDA</option><option value="9522">MAIRINQUE</option><option value="9523">MAIRIPORA</option><option value="9525">MANDURI</option><option value="9527">MARABA PAULISTA</option><option value="9528">MARACAI</option><option value="9529">MARAPOAMA</option><option value="9532">MARIAPOLIS</option><option value="9533">MARILIA</option><option value="9534">MARINOPOLIS</option><option value="9538">MARTINOPOLIS</option><option value="9539">MATAO</option><option value="9540">MAUA</option><option value="9541">MENDONCA</option><option value="9542">MERIDIANO</option><option value="9543">MESOPOLIS</option><option value="9544">MIGUELOPOLIS</option><option value="9545">MINEIROS DO TIETE</option><option value="9546">MIRA ESTRELA</option><option value="9547">MIRACATU</option><option value="9549">MIRANDOPOLIS</option><option value="9550">MIRANTE DO PARANAPANEMA</option><option value="9551">MIRASSOL</option><option value="9552">MIRASSOLANDIA</option><option value="9553">MOCOCA</option><option value="9557">MOGI DAS CRUZES</option><option value="9558">MOGI GUACU</option><option value="9559">MOJI MIRIM</option><option value="9560">MOMBUCA</option><option value="9561">MONCOES</option><option value="9562">MONGAGUA</option><option value="9564">MONTE ALEGRE DO SUL</option><option value="9565">MONTE ALTO</option><option value="9566">MONTE APRAZIVEL</option><option value="9567">MONTE AZUL PAULISTA</option><option value="9569">MONTE CASTELO</option><option value="9570">MONTE MOR</option><option value="9572">MONTEIRO LOBATO</option><option value="9574">MORRO AGUDO</option><option value="9576">MORUNGABA</option><option value="9578">MOTUCA</option><option value="9580">MURUTINGA DO SUL</option><option value="9581">NANTES</option><option value="9582">NARANDIBA</option><option value="9583">NATIVIDADE DA SERRA</option><option value="9584">NAZARE PAULISTA</option><option value="9585">NEVES PAULISTA</option><option value="9586">NHANDEARA</option><option value="9587">NIPOA</option><option value="9591">NOVA ALIANCA</option><option value="9594">NOVA CAMPINA</option><option value="9595">NOVA CANAA PAULISTA</option><option value="9596">NOVA CASTILHO</option><option value="9597">NOVA EUROPA</option><option value="9598">NOVA GRANADA</option><option value="9599">NOVA GUATAPORANGA</option><option value="9600">NOVA INDEPENDENCIA</option><option value="9603">NOVA LUZITANIA</option><option value="9604">NOVA ODESSA</option><option value="9607">NOVAIS</option><option value="9609">NOVO HORIZONTE</option><option value="9610">NUPORANGA</option><option value="9612">OCAUCU</option><option value="9613">OLEO</option><option value="9614">OLIMPIA</option><option value="9617">ONDA VERDE</option><option value="9618">ORIENTE</option><option value="9619">ORINDIUVA</option><option value="9620">ORLANDIA</option><option value="9621">OSASCO</option><option value="9622">OSCAR BRESSANE</option><option value="9623">OSVALDO CRUZ</option><option value="9624">OURINHOS</option><option value="9626">OURO VERDE</option><option value="9627">OUROESTE</option><option value="9628">PACAEMBU</option><option value="9630">PALESTINA</option><option value="9631">PALMARES PAULISTA</option><option value="9632">PALMEIRA D'OESTE</option><option value="9634">PALMITAL</option><option value="9635">PANORAMA</option><option value="9636">PARAGUACU PAULISTA</option><option value="9637">PARAIBUNA</option><option value="9638">PARAISO</option><option value="9641">PARANAPANEMA</option><option value="9643">PARANAPUA</option><option value="9644">PARAPUA</option><option value="9645">PARDINHO</option><option value="9646">PARIQUERA-ACU</option><option value="9647">PARISI</option><option value="9651">PATROCINIO PAULISTA</option><option value="9652">PAULICEIA</option><option value="9653">PAULINIA</option><option value="9654">PAULISTANIA</option><option value="9655">PAULO DE FARIA</option><option value="9657">PEDERNEIRAS</option><option value="9658">PEDRA BELA</option><option value="9660">PEDRANOPOLIS</option><option value="9661">PEDREGULHO</option><option value="9662">PEDREIRA</option><option value="9663">PEDRINHAS PAULISTA</option><option value="9665">PEDRO DE TOLEDO</option><option value="9666">PENAPOLIS</option><option value="9667">PEREIRA BARRETO</option><option value="9668">PEREIRAS</option><option value="9669">PERUIBE</option><option value="9670">PIACATU</option><option value="9672">PIEDADE</option><option value="9673">PILAR DO SUL</option><option value="9674">PINDAMONHANGABA</option><option value="9675">PINDORAMA</option><option value="9676">PINHALZINHO</option><option value="9679">PIQUEROBI</option><option value="9680">PIQUETE</option><option value="9681">PIRACAIA</option><option value="9682">PIRACICABA</option><option value="9684">PIRAJU</option><option value="9685">PIRAJUI</option><option value="9687">PIRANGI</option><option value="9689">PIRAPORA DO BOM JESUS</option><option value="9690">PIRAPOZINHO</option><option value="9691">PIRASSUNUNGA</option><option value="9692">PIRATININGA</option><option value="9693">PITANGUEIRAS</option><option value="9694">PLANALTO</option><option value="9697">PLATINA</option><option value="9698">POA</option><option value="9699">POLONI</option><option value="9701">POMPEIA</option><option value="9702">PONGAI</option><option value="9703">PONTAL</option><option value="9704">PONTALINDA</option><option value="9705">PONTES GESTAL</option><option value="9706">POPULINA</option><option value="9707">PORANGABA</option><option value="9708">PORTO FELIZ</option><option value="9709">PORTO FERREIRA</option><option value="9711">POTIM</option><option value="9712">POTIRENDABA</option><option value="9714">PRACINHA</option><option value="9716">PRADOPOLIS</option><option value="9717">PRAIA GRANDE</option><option value="9718">PRATANIA</option><option value="9719">PRESIDENTE ALVES</option><option value="9720">PRESIDENTE BERNARDES</option><option value="9721">PRESIDENTE EPITACIO</option><option value="9722">PRESIDENTE PRUDENTE</option><option value="9723">PRESIDENTE VENCESLAU</option><option value="9725">PROMISSAO</option><option value="9727">QUADRA</option><option value="9728">QUATA</option><option value="9729">QUEIROZ</option><option value="9730">QUELUZ</option><option value="9731">QUINTANA</option><option value="9733">RAFARD</option><option value="9734">RANCHARIA</option><option value="9736">REDENCAO DA SERRA</option><option value="9737">REGENTE FEIJO</option><option value="9738">REGINOPOLIS</option><option value="9739">REGISTRO</option><option value="9740">RESTINGA</option><option value="9742">RIBEIRA</option><option value="9743">RIBEIRAO BONITO</option><option value="9744">RIBEIRAO BRANCO</option><option value="9745">RIBEIRAO CORRENTE</option><option value="9746">RIBEIRAO DO SUL</option><option value="9747">RIBEIRAO DOS INDIOS</option><option value="9748">RIBEIRAO GRANDE</option><option value="9749">RIBEIRAO PIRES</option><option value="9750">RIBEIRAO PRETO</option><option value="9753">RIFAINA</option><option value="9754">RINCAO</option><option value="9755">RINOPOLIS</option><option value="9756">RIO CLARO</option><option value="9757">RIO DAS PEDRAS</option><option value="9758">RIO GRANDE DA SERRA</option><option value="9759">RIOLANDIA</option><option value="9760">RIVERSUL</option><option value="9763">ROSANA</option><option value="9764">ROSEIRA</option><option value="9765">RUBIACEA</option><option value="9767">RUBINEIA</option><option value="9770">SABINO</option><option value="9771">SAGRES</option><option value="9772">SALES</option><option value="9773">SALES OLIVEIRA</option><option value="9774">SALESOPOLIS</option><option value="9776">SALMOURAO</option><option value="9777">SALTINHO</option><option value="9778">SALTO</option><option value="9779">SALTO DE PIRAPORA</option><option value="9781">SALTO GRANDE</option><option value="9782">SANDOVALINA</option><option value="9783">SANTA ADELIA</option><option value="9784">SANTA ALBERTINA</option><option value="9786">SANTA BARBARA D'OESTE</option><option value="9787">SANTA BRANCA</option><option value="9788">SANTA CLARA D'OESTE</option><option value="9789">SANTA CRUZ DA CONCEICAO</option><option value="9790">SANTA CRUZ DA ESPERANCA</option><option value="9792">SANTA CRUZ DAS PALMEIRAS</option><option value="9793">SANTA CRUZ DO RIO PARDO</option><option value="9795">SANTA ERNESTINA</option><option value="9797">SANTA FE DO SUL</option><option value="9798">SANTA GERTRUDES</option><option value="9799">SANTA ISABEL</option><option value="9801">SANTA LUCIA</option><option value="9803">SANTA MARIA DA SERRA</option><option value="9805">SANTA MERCEDES</option><option value="9806">SANTA RITA D'OESTE</option><option value="9807">SANTA RITA DO PASSA QUATRO</option><option value="9809">SANTA ROSA DE VITERBO</option><option value="9810">SANTA SALETE</option><option value="9812">SANTANA DA PONTE PENSA</option><option value="9813">SANTANA DE PARNAIBA</option><option value="9815">SANTO ANASTACIO</option><option value="9816">SANTO ANDRE</option><option value="9817">SANTO ANTONIO DA ALEGRIA</option><option value="9819">SANTO ANTONIO DE POSSE</option><option value="9820">SANTO ANTONIO DO ARACANGUA</option><option value="9821">SANTO ANTONIO DO JARDIM</option><option value="9823">SANTO ANTONIO DO PINHAL</option><option value="9825">SANTO EXPEDITO</option><option value="9826">SANTOPOLIS DO AGUAPEI</option><option value="9827">SANTOS</option><option value="9830">SAO BENTO DO SAPUCAI</option><option value="9831">SAO BERNARDO DO CAMPO</option><option value="9833">SAO CAETANO DO SUL</option><option value="9834">SAO CARLOS</option><option value="9835">SAO FRANCISCO</option><option value="9838">SAO JOAO DA BOA VISTA</option><option value="9839">SAO JOAO DAS DUAS PONTES</option><option value="9840">SAO JOAO DE IRACEMA</option><option value="9843">SAO JOAO DO PAU D'ALHO</option><option value="9845">SAO JOAQUIM DA BARRA</option><option value="9846">SAO JOSE DA BELA VISTA</option><option value="9848">SAO JOSE DO BARREIRO</option><option value="9849">SAO JOSE DO RIO PARDO</option><option value="9850">SAO JOSE DO RIO PRETO</option><option value="9851">SAO JOSE DOS CAMPOS</option><option value="9852">SAO LOURENCO DA SERRA</option><option value="9854">SAO LUIS DO PARAITINGA</option><option value="9856">SAO MANUEL</option><option value="9858">SAO MIGUEL ARCANJO</option><option value="9859">SAO PAULO</option><option value="9860">SAO PEDRO</option><option value="9861">SAO PEDRO DO TURVO</option><option value="9862">SAO ROQUE</option><option value="9864">SAO SEBASTIAO</option><option value="9865">SAO SEBASTIAO DA GRAMA</option><option value="9868">SAO SIMAO</option><option value="9869">SAO VICENTE</option><option value="9871">SARAPUI</option><option value="9872">SARUTAIA</option><option value="9873">SEBASTIANOPOLIS DO SUL</option><option value="9874">SERRA AZUL</option><option value="9875">SERRA NEGRA</option><option value="9876">SERRANA</option><option value="9877">SERTAOZINHO</option><option value="9878">SETE BARRAS</option><option value="9879">SEVERINIA</option><option value="9881">SILVEIRAS</option><option value="9884">SOCORRO</option><option value="9887">SOROCABA</option><option value="9889">SUD MENNUCCI</option><option value="9892">SUMARE</option><option value="9894">SUZANAPOLIS</option><option value="9895">SUZANO</option><option value="9898">TABAPUA</option><option value="9899">TABATINGA</option><option value="9900">TABOAO DA SERRA</option><option value="9901">TACIBA</option><option value="9902">TAGUAI</option><option value="9903">TAIACU</option><option value="9905">TAIUVA</option><option value="9907">TAMBAU</option><option value="9908">TANABI</option><option value="9910">TAPIRAI</option><option value="9911">TAPIRATIBA</option><option value="9912">TAQUARAL</option><option value="9913">TAQUARITINGA</option><option value="9914">TAQUARITUBA</option><option value="9915">TAQUARIVAI</option><option value="9916">TARABAI</option><option value="9917">TARUMA</option><option value="9918">TATUI</option><option value="9919">TAUBATE</option><option value="9921">TEJUPA</option><option value="9922">TEODORO SAMPAIO</option><option value="9925">TERRA ROXA</option><option value="9928">TIETE</option><option value="9929">TIMBURI</option><option value="9931">TORRE DE PEDRA</option><option value="9932">TORRINHA</option><option value="9933">TRABIJU</option><option value="9934">TREMEMBE</option><option value="9936">TRES FRONTEIRAS</option><option value="9939">TUIUTI</option><option value="9941">TUPA</option><option value="9943">TUPI PAULISTA</option><option value="9945">TURIUBA</option><option value="9946">TURMALINA</option><option value="9948">UBARANA</option><option value="9949">UBATUBA</option><option value="9950">UBIRAJARA</option><option value="9951">UCHOA</option><option value="9952">UNIAO PAULISTA</option><option value="9954">URANIA</option><option value="9955">URU</option><option value="9956">URUPES</option><option value="9960">VALENTIM GENTIL</option><option value="9961">VALINHOS</option><option value="9962">VALPARAISO</option><option value="9964">VARGEM</option><option value="9965">VARGEM GRANDE DO SUL</option><option value="9966">VARGEM GRANDE PAULISTA</option><option value="9968">VARZEA PAULISTA</option><option value="9970">VERA CRUZ</option><option value="9976">VINHEDO</option><option value="9977">VIRADOURO</option><option value="9978">VISTA ALEGRE DO ALTO</option><option value="9979">VITORIA BRASIL</option><option value="9981">VOTORANTIM</option><option value="9982">VOTUPORANGA</option><option value="9983">ZACARIAS</option>
+                    </select>
+                    <div class="separacaoEmpVerde">
+                         <img src="images/transp.gif" width="1" height="1"/>
+                      </div> 
+                              <label style="font-size:11px; color:#333; width:127px; display: inline-block">Tipo de sede:</label>
+                              <select style="font-size:11px; color:#333">
+                     <option value="">Nenhum</option>
+						<option value="2">ALUGADA</option>
+					<option value="4">DE FAMILIARES</option>
+					<option value="1">PROPRIA</option>
+                    </select>
+                     <div class="separacaoEmpVerde">
+			                        <img src="images/transp.gif" width="1" height="1"/>
+                      </div> 
+                          
+                    </div>
+                    
+                  
+                  <div id="bl_conjuge" style="display:none">
+                   <div class="separacaoEmpVerde" style="margin-top:20px">
+			                        <img src="images/transp.gif" width="1" height="1"/>
+		                      </div> 
+                   <div class="sub_titulo_bl">
+                        <div class="espacoTitulo"></div>
+                        	Dados do Conjuge
+                    </div>
+                    
+                    <div class="separacaoEmpVerde">
+			                        <img src="images/transp.gif" width="1" height="1"/>
+                       </div> 
+                              <label style="font-size:11px; color:#333">CPF:</label>
+                       <input size="15" type="text" style="font-size:11px; color:#333" class="lb-fieldRequired"/>
+                       <label style="font-size:11px; color:#333">Nascimento:</label>
+                       <input size="11" type="text" style="font-size:11px; color:#333" class="lb-fieldRequired" />
+                              <label style="font-size:11px; color:#333">Nome Completo:</label>	
+                       <input size="11" type="text" style="font-size:11px; color:#333; width:333px" class="lb-fieldRequired"/>
+                              
+                              <div class="separacaoEmpVerde">
+			                        <img src="images/transp.gif" width="1" height="1"/>
+		                      </div> 	
+                    <label style="font-size:11px; color:#333">Sexo:</label>
+                    <select style="font-size:11px; color:#333">
+                      <option>Nenhum</option>
+                      <option>Masculino</option>
+                      <option>Feminino</option>
+                    </select>
+                              <label style="font-size:11px; color:#333">Capacidade Civil:</label>
+                              <select style="font-size:11px; color:#333">
+                     <option value="">Nenhum</option>
+						<option value="2">CAPAZ</option>
+					<option value="6">EMANCIPAÇÃO</option>
+					<option value="7">ESPOLIO</option>
+					<option value="5">INTERDITO INCAPAZ</option>
+					<option value="3">INTERDITO RELATIVAMENTE INCAPAZ</option>
+					<option value="1">MENOR INCAPAZ</option>
+					<option value="4">MENOR RELATIVAMENTE INCAPAZ</option>
+                    </select>
+                              <label style="font-size:11px; color:#333">Nacionalidade:</label>
+                              <select style="font-size:11px; color:#333">
+                     <option value="">Nenhum</option>
+						<option value="2">AFEGANE</option>
+					<option value="3">ALBANESA</option>
+					<option value="4">ALEMA</option>
+					<option value="5">AMERICANA</option>
+					<option value="6">ANDORRENSE</option>
+					<option value="7">ANGOLANA</option>
+					<option value="239">ANGUILANA</option>
+					<option value="8">ANTIGUANA</option>
+					<option value="172">ANTILHANA</option>
+					<option value="9">ARABE-SAUDITA</option>
+					<option value="10">ARGELINA</option>
+					<option value="11">ARGENTINA</option>
+					<option value="181">ARMENIA</option>
+					<option value="182">ARUBANENSE</option>
+					<option value="12">AUSTRALIANA</option>
+					<option value="13">AUSTRIACA</option>
+					<option value="183">AZERBAIDJANO</option>
+					<option value="14">BAHAMIANA</option>
+					<option value="171">BAHRAINESA</option>
+					<option value="15">BARBADIANA</option>
+					<option value="16">BAREINITA</option>
+					<option value="17">BELGA</option>
+					<option value="18">BELIZENHA</option>
+					<option value="19">BENGALI</option>
+					<option value="20">BENINENSE</option>
+					<option value="21">BERMUDENSE</option>
+					<option value="184">BIELORRUSSA</option>
+					<option value="22">BIRMANESA</option>
+					<option value="248">BIRMANESA</option>
+					<option value="23">BOLIVIANA</option>
+					<option value="185">BOSNENSE</option>
+					<option value="163">BOTSWANESA</option>
+					<option value="1">BRASILEIRA</option>
+					<option value="166">BRITANICA</option>
+					<option value="24">BRUNEANA</option>
+					<option value="25">BULGARA</option>
+					<option value="186">BURQUINENSE</option>
+					<option value="26">BURUNDINESA</option>
+					<option value="27">BUTANESA</option>
+					<option value="28">CABO-VERDIANA</option>
+					<option value="29">CAMARONESA</option>
+					<option value="30">CAMPUCHEANA</option>
+					<option value="31">CANADENSE</option>
+					<option value="32">CANARESA</option>
+					<option value="33">CATARIANA</option>
+					<option value="167">CAYMANESA</option>
+					<option value="187">CAZAQUE</option>
+					<option value="221">CENTRO-AFRICANA</option>
+					<option value="34">CHADIANA</option>
+					<option value="188">CHADIENSE</option>
+					<option value="150">CHECOSLOVACA</option>
+					<option value="35">CHILENA</option>
+					<option value="36">CHINESA</option>
+					<option value="37">CINGALESA</option>
+					<option value="39">CIPRIOTA</option>
+					<option value="40">COLOMBIANA</option>
+					<option value="41">CONGOLESA</option>
+					<option value="42">COREANA</option>
+					<option value="43">COSTA-RIQUENSE</option>
+					<option value="242">CROATA</option>
+					<option value="44">CUBANA</option>
+					<option value="45">DINAMARQUESA</option>
+					<option value="175">DJIBOUTIANA</option>
+					<option value="46">DOMINICANA</option>
+					<option value="47">DOMINIQUESA</option>
+					<option value="48">EGIPCIA</option>
+					<option value="191">EMIRATENSE</option>
+					<option value="49">EQUATORIANA</option>
+					<option value="192">ERITREIA</option>
+					<option value="50">ESCOCESA</option>
+					<option value="193">ESLOVACA</option>
+					<option value="194">ESLOVENA</option>
+					<option value="51">ESPANHOLA</option>
+					<option value="165">ESTONIANA</option>
+					<option value="52">ETIOPE</option>
+					<option value="196">FEROENSE</option>
+					<option value="53">FIJIANA</option>
+					<option value="54">FILIPINA</option>
+					<option value="55">FINLANDESA</option>
+					<option value="56">FORMOSINA</option>
+					<option value="57">FRANCESA</option>
+					<option value="58">GABONENSE</option>
+					<option value="59">GALESA</option>
+					<option value="60">GAMBIANA</option>
+					<option value="61">GANENSE</option>
+					<option value="198">GEORGIANA</option>
+					<option value="62">GIBRALTARINA</option>
+					<option value="63">GRANADINA</option>
+					<option value="64">GREGA</option>
+					<option value="65">GROENLANDESA</option>
+					<option value="201">GUADALUPANA</option>
+					<option value="202">GUAMES</option>
+					<option value="66">GUATEMALTECA</option>
+					<option value="67">GUIANENSE</option>
+					<option value="203">GUIANENSE</option>
+					<option value="68">GUINEANA</option>
+					<option value="205">GUINEENSE</option>
+					<option value="204">GUINEENSE </option>
+					<option value="206">GUINEU-EQUATORIANA</option>
+					<option value="69">HAITIANA</option>
+					<option value="70">HOLANDESA</option>
+					<option value="207">HONCONGUES</option>
+					<option value="71">HONDURENHA</option>
+					<option value="72">HUNGARA</option>
+					<option value="73">IEMENITA</option>
+					<option value="179">IEMENITA</option>
+					<option value="74">INDIANA</option>
+					<option value="75">INDONESIA</option>
+					<option value="76">INGLESA</option>
+					<option value="77">IRANIANA</option>
+					<option value="78">IRAQUIANA</option>
+					<option value="79">IRLANDESA</option>
+					<option value="80">ISLANDESA</option>
+					<option value="81">ISRAELENSE</option>
+					<option value="82">ITALIANA</option>
+					<option value="83">IUGOSLAVA</option>
+					<option value="84">JAMAICANA</option>
+					<option value="85">JAPONESA</option>
+					<option value="86">JORDANIANA</option>
+					<option value="208">KIRIBATIANA</option>
+					<option value="87">KUWAITIANA</option>
+					<option value="88">LAOSIANA</option>
+					<option value="89">LESOTA</option>
+					<option value="168">LETONIANA</option>
+					<option value="90">LIBANESA</option>
+					<option value="91">LIBERIANA</option>
+					<option value="92">LIBIA</option>
+					<option value="93">LIECHTENSTEINIENSE</option>
+					<option value="169">LITUANA</option>
+					<option value="94">LUXEMBURGUESA</option>
+					<option value="173">MACAUESA</option>
+					<option value="209">MACEDONIA</option>
+					<option value="95">MALAIA</option>
+					<option value="96">MALAUIANA</option>
+					<option value="97">MALDIVA</option>
+					<option value="98">MALGAXE</option>
+					<option value="99">MALINESA</option>
+					<option value="100">MALTESA</option>
+					<option value="195">MALVINENSE</option>
+					<option value="101">MARFINENSE</option>
+					<option value="102">MARROQUINA</option>
+					<option value="211">MARSHALLINA</option>
+					<option value="174">MARTINIQUESA</option>
+					<option value="103">MAURICIANA</option>
+					<option value="104">MAURITANA</option>
+					<option value="105">MEXICANA</option>
+					<option value="212">MICRONESIA</option>
+					<option value="106">MOCAMBICANA</option>
+					<option value="213">MOLDAVIA</option>
+					<option value="107">MONEGASCA</option>
+					<option value="108">MONGOL</option>
+					<option value="214">MONTENEGRINA</option>
+					<option value="999">NACION.NAODECLARADA</option>
+					<option value="109">NAMIBIANA</option>
+					<option value="110">NAURUANA</option>
+					<option value="217">NEOCALEDONIA</option>
+					<option value="111">NEOZELANDESA</option>
+					<option value="112">NEPALESA</option>
+					<option value="113">NICARAGUENSE</option>
+					<option value="114">NIGERIANA</option>
+					<option value="115">NIGERINA</option>
+					<option value="215">NIUENSE</option>
+					<option value="216">NORFOLQUINA</option>
+					<option value="189">NORTE-COREANA</option>
+					<option value="210">NORTE-MARIANENSE</option>
+					<option value="116">NORUEGUESA</option>
+					<option value="117">OMANI</option>
+					<option value="247">OUTRA NACIONALIDADE</option>
+					<option value="218">PALAUENSE</option>
+					<option value="118">PANAMENHA</option>
+					<option value="250">PAPUANESA</option>
+					<option value="119">PAPUASIA</option>
+					<option value="120">PAQUISTANENSE</option>
+					<option value="121">PARAGUAIA</option>
+					<option value="226">PEDRO-MIQUELONENSE</option>
+					<option value="122">PERUANA</option>
+					<option value="219">PITCAIRNENSE</option>
+					<option value="220">POLINESIA</option>
+					<option value="123">POLONESA</option>
+					<option value="124">PORTO-RIQUENSE</option>
+					<option value="125">PORTUGUESA</option>
+					<option value="126">QUENIANA</option>
+					<option value="246">QUIRQUIZ</option>
+					<option value="222">REUNIONENSE</option>
+					<option value="127">RODESIANA</option>
+					<option value="128">ROMENA</option>
+					<option value="129">RUANDESA</option>
+					<option value="130">RUSSA</option>
+					<option value="223">SAARIANA</option>
+					<option value="224">SALOMONENSE</option>
+					<option value="131">SALVADORENHA</option>
+					<option value="132">SAMOANA</option>
+					<option value="249">SAN MARTINENSE</option>
+					<option value="225">SANTA-HELENENSE</option>
+					<option value="133">SANTA-LUCENSE</option>
+					<option value="134">SAO-CRISTOVENSE</option>
+					<option value="135">SAO-MARINENSE</option>
+					<option value="227">SAO-TOMENSE</option>
+					<option value="136">SAO-VICENTINA</option>
+					<option value="229">SEICHELENSE</option>
+					<option value="137">SENEGALESA</option>
+					<option value="138">SERRA-LEONESA</option>
+					<option value="228">SERVIA</option>
+					<option value="38">SINGAPURIANA</option>
+					<option value="139">SIRIA</option>
+					<option value="140">SOMALI</option>
+					<option value="141">SUAZI</option>
+					<option value="142">SUDANESA</option>
+					<option value="143">SUECA</option>
+					<option value="144">SUICA</option>
+					<option value="145">SUL-AFRICANA</option>
+					<option value="146">SURINAMESA</option>
+					<option value="230">TADJIQUE</option>
+					<option value="147">TAILANDESA</option>
+					<option value="148">TAITIANA</option>
+					<option value="197">TAIUANES</option>
+					<option value="149">TANZANIANA</option>
+					<option value="164">THECA</option>
+					<option value="231">TIMORENSE</option>
+					<option value="151">TOGOLESA</option>
+					<option value="152">TONGANESA</option>
+					<option value="232">TOQUELAUENSE</option>
+					<option value="153">TRINITARIA</option>
+					<option value="154">TUNISIANA</option>
+					<option value="155">TURCA</option>
+					<option value="233">TURCO-CAICENSE</option>
+					<option value="234">TURCOMANA</option>
+					<option value="235">TUVALUANA</option>
+					<option value="156">UCRANIANA</option>
+					<option value="157">UGANDENSE</option>
+					<option value="158">URUGUAIA</option>
+					<option value="236">UZBEQUE</option>
+					<option value="237">VANUATENSE</option>
+					<option value="238">VATICANA</option>
+					<option value="159">VENEZUELANA</option>
+					<option value="160">VIETNAMITA</option>
+					<option value="244">VIRGINENSE</option>
+					<option value="245">WALLIS-FUTENSE</option>
+					<option value="161">ZAIRENSE</option>
+					<option value="162">ZAMBIANA</option>
+					<option value="170">ZIMBABUENSE</option>
+                    </select>
+                    <div class="separacaoEmpVerde" style="margin-top:20px">
+			                        <img src="images/transp.gif" width="1" height="1"/>
+		                      </div> 	
+                              <label style="font-size:11px; color:#333; width:122px; display: inline-block">Documento:</label>
+                    <select style="font-size:11px; color:#333; margin-right:30px">
+                      <option>Nenhum</option>
+                     <option title="CARTEIRA PROFISSIONAL" value="1325">CARTEIRA PROFISSIONAL</option>
+					<option title="PASSAPORTE" value="1326">PASSAPORTE</option>
+					<option title="CARTEIRA NACIONAL DE HABILITACAO" value="1625">CARTEIRA NACIONAL DE HABILITACAO</option>
+					<option title="REGISTRO NACIONAL DE ESTRANGEIRO" value="1049">REGISTRO NACIONAL DE ESTRANGEIRO</option>
+					<option title="CEDULA DE IDENTIDADE" value="566">CEDULA DE IDENTIDADE</option>
+                    </select>
+                    <label style="font-size:11px; color:#333; width:104px; display: inline-block">Número:</label>
+                    <input size="15" type="text" style="font-size:11px; color:#333" />
+                    <label style="font-size:11px; color:#333">Data de Expedição:</label>
+                    <input size="11" type="text" style="font-size:11px; color:#333" />
+                              <div class="separacaoEmpVerde">
+			                        <img src="images/transp.gif" width="1" height="1"/>
+		                      </div> 	
+                              <label style="font-size:11px; color:#333; width:122px; display: inline-block">Orgão Expedidor:</label>
+                    <input size="15" type="text" style="font-size:11px; color:#333; width:158px; margin-right:30px" />
+                     <label style="font-size:11px; color:#333; width:104px; display: inline-block">Estado Expedidor:</label>
+                    <select style="font-size:11px; color:#333">
+                     <option value="">Nenhum</option>
+						<option value="AC">AC</option>
+					<option value="AL">AL</option>
+					<option value="AM">AM</option>
+					<option value="AP">AP</option>
+					<option value="BA">BA</option>
+					<option value="CE">CE</option>
+					<option value="DF">DF</option>
+					<option value="ES">ES</option>
+					<option value="GO">GO</option>
+					<option value="MA">MA</option>
+					<option value="MG">MG</option>
+					<option value="MS">MS</option>
+					<option value="MT">MT</option>
+					<option value="PA">PA</option>
+					<option value="PB">PB</option>
+					<option value="PE">PE</option>
+					<option value="PI">PI</option>
+					<option value="PR">PR</option>
+					<option value="RJ">RJ</option>
+					<option value="RN">RN</option>
+					<option value="RO">RO</option>
+					<option value="RR">RR</option>
+					<option value="RS">RS</option>
+					<option value="SC">SC</option>
+					<option value="SE">SE</option>
+					<option value="SP">SP</option>
+					<option value="TO">TO</option>
+                    </select>
+                              <div class="separacaoEmpVerde">
+			                        <img src="images/transp.gif" width="1" height="1"/>
+		                      </div> 	
+                             <label style="font-size:11px; color:#333; width:122px; display: inline-block">Naturalidade:</label>
+                    <input size="15" type="text" style="font-size:11px; color:#333; width:158px; margin-right:30px" />
+                             
+                               <div class="separacaoEmpVerde">
+			                        <img  src="images/transp.gif" width="1" height="1"/>
+		                      </div> 
+                       
+                              <input name="" type="checkbox" value="" c />
+                    <label style="font-size:11px; color:#333">utilizar mesmo endereço do comprador</label>
+                    </div>
+                  
+                  
+                  
+                  
+                  
+                   <div class="rodapeTelas" style="clear:left; margin-top:20px">
+                   
+          
+          <table border="0" cellspacing="0" cellpadding="0" class="ajuste_rodape">
+                    <tr>
+                      <td>
+                      <a type="button"  href="resumo_proposta.html" style="text-decoration:none">
+<table border="0" 
+           
+                                cellspacing="0" 
+                                cellpadding="0" 
+                                class="botaoRodapeBordaLeft bt_guardar" 
+                                style="margin-left:0"
+                               >
+                                    <tr>
+                                        <td>
+                                       
+                                            <div 
+                                                 class="botaoRodape" style="font-size:11px; font-weight:bold; width:120px">
+                                            
+                                               Voltar ao Resumo
+                                              
+                                                  <div class="correcaominwidth"></div>
+                                              
+                                            </div>
+                                        </td>
+                                    </tr>
+              </table>
+              </a>
+                      
+              <a type="button"  href="#" style="text-decoration:none">
+<table border="0" 
+           
+                                cellspacing="0" 
+                                cellpadding="0" 
+                                class="botaoRodapeBordaRight bt_guardar"
+                                style="margin-right:0" 
+                               >
+                                    <tr>
+                                        <td>
+                                       
+                                            <div 
+                                                 class="botaoRodape" style="font-size:11px; font-weight:bold; width:120px">
+                                            
+                                               Salvar
+                                              
+                                                  <div class="correcaominwidth"></div>
+                                              
+                                            </div>
+                                        </td>
+                                    </tr>
+              </table>
+              </a>
+              
+              
+                      </td>
+                      </tr>
+                      </table>
+                      </div>
+                </td>
+            </tr>
+        </table>    
+    
+    </div>
+
+
+
+<table cellspacing="0" cellpadding="0" width="100%" border="0" style="bottom:0; position: fixed; display:">
+	<tr>
+    <td align="left"><div class="rodapeCliente"></div></td>
+    <td width="100%" align="center" class="rodapeClienteDegrade"><div class="rodapeClienteImagemDegrade"></div></td>
+    <td align="right"><div class="rodapeClienteDireita"></div></td>
+  </tr>
+</table>
+
+
+</body>
+</html>

@@ -1,0 +1,815 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" href="css/styles_1024.css" type="text/css">
+<link rel="stylesheet" href="css/styles_800.css" type="text/css">
+<script type="text/javascript" language="javascript" src="js/jquery-2.1.1.min.js" ></script>
+<script type="text/javascript" language="javascript" src="js/jquery.maskedinput.min.js" ></script>
+<script type="text/javascript" language="javascript" src="js/jquery.maskMoney.min.js" ></script>
+
+ <script>
+ 
+ $(document).ready(function() {
+	 
+	
+
+$("#show_blocos").click(function(){			
+			$("#bloco_show").show();	
+			$("#bloco_show1").show();
+			$("#bloco_show2").show();
+			$("#bloco_show3").show();
+			$("#msg_hide").hide();
+			//$("#block_concluir").attr("style", "background-color:#999 ; cursor:default; font-size:11px; font-weight:bold; width:120px ");
+			
+			
+				
+		});
+		
+		
+		
+		
+		 }); 
+	
+	</script>
+
+<title>Protótipo Santander - Simulador / Originação</title>
+</head>
+
+<body>
+
+<table cellspacing="0" cellpadding="0" width="100%" border="0" class="header">
+  <tr>
+    <td valign="middle" class="bgLogo">
+      <img width="280" height="1" src="images/transp.gif" />
+    </td>
+    <td width="100%" valign="top">&nbsp;</td>
+  </tr>
+</table>
+
+    <div id="divAguarde" class="Section" style="width:800px; padding-bottom:30px">
+    
+        <table class="MainFrame" style="width:100%">
+            <tr>
+                <td>	                     
+                    <div class="titulo">
+                        <div class="espacoTitulo"></div>
+                        	Resumo da Proposta - Aquisição de Imóvel
+                    </div>
+                    <div style="margin-bottom:15px; font-size:11px"><span style="color:#333; font-size:11px; font-family:verdana">Os campos em</span><span style="color: #FF0000; font-size:11px; font-weight:bold; font-family:verdana"> vermelho</span><span style="color:#333; font-size:11px; font-family:verdana"> são obrigatórios.</span></div>
+                    <div class="st_proposta">
+                     <div class="separacaoEmpVerde">
+			                        <img src="images/transp.gif" width="1" height="1"/>
+		                      </div> 	
+                              
+                              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+ 							         <tr>
+ 							           <td class="numeroProposta2" nowrap="nowrap"> Proposta n&deg;: 00001 <strong name="id_proposta" group="situacao_proposta" field="cd_proposta" datatype="long"></strong> &nbsp; <div block-name="Contrato" style="display:block"><strong group="situacao_proposta" field="cd_contrato"/></div></td>
+ 							           <td align="right" valign="top" class="numeroProposta3" width="100%"><strong style="padding-right:4px" group="situacao_proposta" field="nm_fase"></strong></td>
+ 							           <td align="right" class="nr_contrato" nowrap="nowrap"> <div id="divNumeroContrato1" style="display: ">
+                							<span class="numeroProposta2">Fase: Complemento de Cadastro</span> <strong id="cdContrato" field="cd_contrato" group="situacao_proposta" style="margin-right:5px"></strong>       
+                						</div>
+                						</td>
+						             </tr>
+						           </table>
+                    </div>
+                    <div id="bloco_show3" style="position:relative; margin-top:10px; margin-bottom:5px">
+                  <img src="images/check_nv.png" width="42" height="34" style="position:absolute; z-index:10px; top:8px; left:-19px; display:"/>
+<div style="background-color:#90fa90; padding:5px; font-family:'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif; font-size:12px; color:#000; font-weight:">
+              <span style="margin-left:20px; font-size:13px">
+Todas as Etapas da <strong>Fase: Complemento de Cadastro</strong> foram concluídas.
+
+<div style="margin-left:22px">Clique no <strong>Botão Concluir Fase</strong> para iniciar a <strong>Fase de Aceite: Indexação de Documentos.</strong></div>
+
+
+</span>
+              </div>
+                  </div>
+                    <div class="cab_resumo">
+                     <div class="separacaoEmpVerde">
+			                        <img src="images/transp.gif" width="1" height="1"/>
+		                      </div> 	
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tabelas_resumo" style="display:none">
+  <tr>
+    <td class="td_cabecalho_resumo">&nbsp;Modalidade</td>
+  </tr>
+  <tr>
+    <td class="td_conteudo_resumo">&nbsp;?</td>
+  </tr>
+</table>
+ <div class="separacaoEmpVerde">
+			                        <img src="images/transp.gif" width="1" height="1"/>
+		                      </div> 	
+                              <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tabelas_resumo">
+  <tr>
+    <td class="td_cabecalho_resumo" width="264">&nbsp;Valor de Compra e Venda (R$)</td>
+    <td class="td_cabecalho_resumo" width="264">&nbsp;Prazo meses</td>
+    <td class="td_cabecalho_resumo" width="264">&nbsp;Taxa Nominal %</td>
+  </tr>
+  <tr>
+    <td class="td_conteudo_resumo">&nbsp;680.000,00</td>
+    <td class="td_conteudo_resumo">&nbsp;360</td>
+    <td class="td_conteudo_resumo">&nbsp;11,00</td>
+  </tr>
+</table>
+ <div class="separacaoEmpVerde">
+			                        <img src="images/transp.gif" width="1" height="1"/>
+		                      </div> 
+                              <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tabelas_resumo">
+  <tr>
+    <td class="td_cabecalho_resumo" width="264">&nbsp;Tipo de Amortização</td>
+    <td class="td_cabecalho_resumo" width="264">&nbsp;Valor do Financiamento R$</td>
+    <td class="td_cabecalho_resumo" width="264">&nbsp;Valor da Parcela R$</td>
+  </tr>
+  <tr>
+    <td class="td_conteudo_resumo">&nbsp;SAC</td>
+    <td class="td_conteudo_resumo">&nbsp;353.490,00</td>
+    <td class="td_conteudo_resumo">&nbsp;4.821,79</td>
+  </tr>
+</table>
+ <div class="separacaoEmpVerde">
+			                        <img src="images/transp.gif" width="1" height="1"/>
+		                      </div> 
+                  </div>
+                   <label style="font-size:11px; color:#333;; display:none">Modalidade:</label>
+                                <select id="select_produto" style="font-size:11px; color:#333; display:none">
+                      <option>Nenhum</option>
+                      <option value="1" selected="selected">Isolado</option>
+                      <option value="2">Portabilidade</option>
+                      <option>Interveniente Quitante</option>
+                      <option>Aquisição de fracao ideal</option>
+                      <option>Cessão com construtora</option>
+                      
+                      
+                     
+                    </select>
+                  <div class="bl_proponente" style="margin-top:20px">
+                   <div class="sub_titulo_bl">
+                        <div class="espacoTitulo"></div>
+                        	Participantes
+                    </div>
+                  <div class="SectionTitle">Proponentes Cadastrados</div>
+                  <div class="separacaoAtendVerde"><img src="images/transp.gif" width="1" height="1" /></div>
+                  <div id="msg_hide" style="position:relative; display:none">
+                  <img src="images/help_nv.png" width="42" height="34" style="position:absolute; z-index:10px; top:-6px; left:-19px"/>
+<div style="background-color:#f8f59d; padding:5px; font-family:'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif; font-size:12px; color:#000; font-weight:">
+              <span style="margin-left:20px">Favor acessar para conferir ou atualizar as informações dos proponentes.</span>
+              </div>
+                  </div>
+                
+                 <div>
+                  <div class="separacaoAtendVerde"><img src="images/transp.gif" width="1" height="1" /></div>
+                 <div style="position:relative">
+                  <img src="images/check_resumo.png"  style="position:absolute; z-index:10px; top:-1px; left:-14px"/>
+<div style="background-color:#90fa90; padding:5px; font-family:'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif; font-size:12px; color:#000; font-weight:">
+              <span style="margin-left:20px"><strong style="color:#2e7019">Cadastro do(s) Proponente(s) concluído.</strong></span>
+              </div>
+                  </div> 
+<div class="separacaoEmpVerde">
+			                        <img src="images/transp.gif" width="1" height="1"/>
+                    </div> 	
+                    
+                    <div style="border:#90fa90 3px solid">
+                 <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tabelas_resumo" style=" border-left:#34ca34 1px solid;  border-right:#34ca34 1px solid;  border-top:#34ca34 1px solid;  border-bottom:#34ca34 1px solid">
+  <tr>
+    <td class="td_cabecalho_resumo"><div  style="width:150px">&nbsp;CPF/CNPJ</div></td>
+    <td class="td_cabecalho_resumo" width="100%">&nbsp;Nome/Razão Social</td>
+    <td class="td_cabecalho_resumo" width="264">&nbsp;</td>
+    <td class="td_cabecalho_resumo" width="264" style="border-right:0">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="td_conteudo_resumo">&nbsp;332.852.738-95</td>
+    <td class="td_conteudo_resumo">&nbsp;João da Silva</td>
+    <td class="td_conteudo_resumo" style=" padding-left:2px; padding-right:2px; padding-top:2px; padding-bottom:2px">
+      <a style="text-decoration: none" type="button" href="cadastro_comprador_pf.html">
+        <table cellspacing="0" cellpadding="0" border="0" style="margin:0" class="botaoRodapeBordaLeft bt_acessar_br">
+          <tbody><tr>
+            <td>                                       
+              <div class="botaoRodape" style="font-size:11px; font-weight:bold; width:55px; background-color:#34ca34">
+                
+                <span class="bt_acessar">Acessar</span>
+                <div class="correcaominwidth_acao"></div>
+                </div>
+              </td>
+            </tr>
+            </tbody></table>
+        </a>
+      </td>
+    <td class="td_conteudo_resumo" style=" padding-left:2px; padding-right:2px; padding-top:2px; padding-bottom:2px; border-right:0" ><a style="text-decoration: none;" type="button" href="#">
+      <table cellspacing="0" cellpadding="0" border="0" style="margin:0" class="botaoRodapeBordaLeft bt_acessar_br">
+        <tbody><tr>
+          <td>                                       
+            <div class="botaoRodape" style="font-size:11px; font-weight:bold; width:55px; background-color:#34ca34">
+              
+              <span class="bt_acessar">Excluir</span>
+              <div class="correcaominwidth_acao"></div>
+              </div>
+            </td>
+          </tr>
+          </tbody></table>
+      </a></td>
+  </tr>
+  <tr>
+    <td class="td_conteudo_resumo" style="border-bottom:0" >&nbsp;477.730.926-64</td>
+    <td class="td_conteudo_resumo" style="border-bottom:0">&nbsp;Maria da Silva</td>
+    
+    <td class="td_conteudo_resumo" style=" padding-left:2px; padding-right:2px; padding-top:2px; padding-bottom:2px; border-bottom:0" >
+     <a style="text-decoration: none" type="button" href="cadastro_comprador_pf_conjuge.html">
+                              <table cellspacing="0" cellpadding="0" border="0" style="margin:0" class="botaoRodapeBordaLeft bt_acessar_br">
+                                    <tbody><tr>
+                                        <td>                                       
+                                            <div class="botaoRodape" style="font-size:11px; font-weight:bold; width:55px; background-color:#34ca34">
+                                              
+                                         	   <span class="bt_acessar">Acessar</span>
+                                   			   <div class="correcaominwidth_acao"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                              </tbody></table>
+                </a>
+    </td>
+    <td class="td_conteudo_resumo" style=" padding-left:2px; padding-right:2px; padding-top:2px; padding-bottom:2px;border-bottom:0; border-right:0"><a style="text-decoration: none;" type="button" href="#">
+                              <table cellspacing="0" cellpadding="0" border="0" style="margin:0" class="botaoRodapeBordaLeft bt_acessar_br">
+                                    <tbody><tr>
+                                        <td>                                       
+                                            <div class="botaoRodape" style="font-size:11px; font-weight:bold; width:55px; background-color:#34ca34">
+                                              
+                                         	   <span class="bt_acessar">Excluir</span>
+                                   			   <div class="correcaominwidth_acao"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                              </tbody></table>
+                         </a></td>
+  </tr>
+</table> 
+</div>
+</div> 
+<div class="separacaoEmpVerde">
+			                        <img src="images/transp.gif" width="1" height="1"/>
+                    </div> 	
+                              <table width="100%" border="0" cellspacing="0" cellpadding="0" style="display:none">
+  <tr>
+    <td><a style="text-decoration: none; display:none" type="button" href="cadastro_comprador_pf.html">
+                              <table cellspacing="0" cellpadding="0" border="0" style="margin:0" class="botaoRodapeBordaLeft bt_acessar_br">
+                                    <tbody><tr>
+                                        <td>                                       
+                                            <div class="botaoRodape" style="font-size:11px; font-weight:bold; width:205px; margin-right:5px">
+                                              
+                                         	   <span class="bt_acessar">Adicionar Proponente PF</span>
+                                   			   <div class="correcaominwidth_acao"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                              </tbody></table>
+              </a></td>
+    <td><a style="text-decoration: none; display:none" type="button" href="#">
+                              <table cellspacing="0" cellpadding="0" border="0" style="margin:0" class="botaoRodapeBordaLeft bt_acessar_br">
+                                    <tbody><tr>
+                                        <td>                                       
+                                            <div class="botaoRodape" style="font-size:11px; font-weight:bold; width:205px">
+                                              
+                                         	   <span class="bt_acessar">Adicionar Proponente PJ</span>
+                                   			   <div class="correcaominwidth_acao"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                              </tbody></table>
+                         </a></td>
+    <td width="100%">&nbsp;</td>
+  </tr>
+</table>
+<div>
+<div class="SectionTitle" >Selecionar uma C/C para Débito</div>
+<div class="separacaoAtendVerde"><img src="images/transp.gif" width="1" height="1" /></div>
+                 <div style="position:relative">
+                  <p><img src="images/help_nv.png" width="42" height="34" style="position:absolute; z-index:10px; top:-6px; left:-19px"/>
+                  </p>
+                  <div style="background-color:#f8f59d; padding:5px; font-family:'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif; font-size:12px; color:#000; font-weight:">
+                    <p style="margin-left:20px">Não existe conta corrente aberta e ativa para os participantes.
+                    </p>
+                  </div>
+                  </div> 
+</div>
+
+
+                
+                  
+                  
+                  <div id="bloco_show" class="bl_proponente" style="display:">
+                  
+                  <div class="SectionTitle" style="margin-top:15px">Vendedores Cadastrados</div>
+                  <div class="separacaoAtendVerde"><img src="images/transp.gif" width="1" height="1" /></div>
+                  <div style="position:relative; display:none">
+                  <img src="images/help_nv.png" width="42" height="34" style="position:absolute; z-index:10px; top:-6px; left:-19px"/>
+<div style="background-color:#f8f59d; padding:5px; font-family:'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif; font-size:12px; color:#000; font-weight:">
+              <span style="margin-left:20px">Favor acessar para conferir ou atualizar as informações do 2 vendedor.</span>
+              </div>
+                  </div>
+                  
+                  <div>
+                  <div class="separacaoAtendVerde"><img src="images/transp.gif" width="1" height="1" /></div>
+                 <div style="position:relative">
+                  <img src="images/check_resumo.png"  style="position:absolute; z-index:10px; top:-1px; left:-14px"/>
+<div style="background-color:#90fa90; padding:5px; font-family:'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif; font-size:12px; color:#000; font-weight:">
+              <span style="margin-left:20px"><strong style="color:#2e7019">Cadastro do(s) Vendedor(es) concluído.</strong></span>
+              </div>
+                  </div> 
+<div class="separacaoEmpVerde">
+			                        <img src="images/transp.gif" width="1" height="1"/>
+                    </div> 	
+                    
+                    <div style="border:#90fa90 3px solid">
+                 <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tabelas_resumo" style=" border-left:#34ca34 1px solid;  border-right:#34ca34 1px solid;  border-top:#34ca34 1px solid;  border-bottom:#34ca34 1px solid">
+  <tr>
+    <td class="td_cabecalho_resumo"><div  style="width:150px">&nbsp;CPF/CNPJ</div></td>
+    <td class="td_cabecalho_resumo" width="100%">&nbsp;Nome/Razão Social</td>
+    <td class="td_cabecalho_resumo" width="264">&nbsp;</td>
+    <td class="td_cabecalho_resumo" width="264" style="border-right:0">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="td_conteudo_resumo">&nbsp;380.112.373-14</td>
+    <td class="td_conteudo_resumo">&nbsp;José da Costa</td>
+    <td class="td_conteudo_resumo" style=" padding-left:2px; padding-right:2px; padding-top:2px; padding-bottom:2px">
+      <a style="text-decoration: none" type="button" href="cadastro_comprador_pf.html">
+        <table cellspacing="0" cellpadding="0" border="0" style="margin:0" class="botaoRodapeBordaLeft bt_acessar_br">
+          <tbody><tr>
+            <td>                                       
+              <div class="botaoRodape" style="font-size:11px; font-weight:bold; width:55px; background-color:#34ca34">
+                
+                <span class="bt_acessar">Acessar</span>
+                <div class="correcaominwidth_acao"></div>
+                </div>
+              </td>
+            </tr>
+            </tbody></table>
+        </a>
+      </td>
+    <td class="td_conteudo_resumo" style=" padding-left:2px; padding-right:2px; padding-top:2px; padding-bottom:2px; border-right:0" ><a style="text-decoration: none;" type="button" href="#">
+      <table cellspacing="0" cellpadding="0" border="0" style="margin:0" class="botaoRodapeBordaLeft bt_acessar_br">
+        <tbody><tr>
+          <td>                                       
+            <div class="botaoRodape" style="font-size:11px; font-weight:bold; width:55px; background-color:#34ca34">
+              
+              <span class="bt_acessar">Excluir</span>
+              <div class="correcaominwidth_acao"></div>
+              </div>
+            </td>
+          </tr>
+          </tbody></table>
+      </a></td>
+  </tr>
+  <tr>
+    <td class="td_conteudo_resumo" style="border-bottom:0" >&nbsp;638.706.221-72</td>
+    <td class="td_conteudo_resumo" style="border-bottom:0">&nbsp;Joana da Costa</td>
+    
+    <td class="td_conteudo_resumo" style=" padding-left:2px; padding-right:2px; padding-top:2px; padding-bottom:2px; border-bottom:0" >
+     <a style="text-decoration: none" type="button" href="cadastro_comprador_pf_conjuge.html">
+                              <table cellspacing="0" cellpadding="0" border="0" style="margin:0" class="botaoRodapeBordaLeft bt_acessar_br">
+                                    <tbody><tr>
+                                        <td>                                       
+                                            <div class="botaoRodape" style="font-size:11px; font-weight:bold; width:55px; background-color:#34ca34">
+                                              
+                                         	   <span class="bt_acessar">Acessar</span>
+                                   			   <div class="correcaominwidth_acao"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                              </tbody></table>
+                </a>
+    </td>
+    <td class="td_conteudo_resumo" style=" padding-left:2px; padding-right:2px; padding-top:2px; padding-bottom:2px;border-bottom:0; border-right:0"><a style="text-decoration: none;" type="button" href="#">
+                              <table cellspacing="0" cellpadding="0" border="0" style="margin:0" class="botaoRodapeBordaLeft bt_acessar_br">
+                                    <tbody><tr>
+                                        <td>                                       
+                                            <div class="botaoRodape" style="font-size:11px; font-weight:bold; width:55px; background-color:#34ca34">
+                                              
+                                         	   <span class="bt_acessar">Excluir</span>
+                                   			   <div class="correcaominwidth_acao"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                              </tbody></table>
+                         </a></td>
+  </tr>
+</table> 
+</div>
+</div>
+                 <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tabelas_resumo" style="display:none">
+  <tr>
+    <td class="td_cabecalho_resumo"><div  style="width:150px">&nbsp;CPF/CNPJ</div></td>
+    <td class="td_cabecalho_resumo" width="100%">&nbsp;Nome/Razão Social</td>
+    <td class="td_cabecalho_resumo" width="264">&nbsp;</td>
+    <td class="td_cabecalho_resumo" width="264">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="td_conteudo_resumo">&nbsp;?</td>
+    <td class="td_conteudo_resumo">&nbsp;</td>
+    <td class="td_conteudo_resumo" style=" padding-left:2px; padding-right:2px; padding-top:2px; padding-bottom:2px">
+     <a style="text-decoration: none" type="button" href="#">
+                              <table cellspacing="0" cellpadding="0" border="0" style="margin:0" class="botaoRodapeBordaLeft bt_acessar_br">
+                                    <tbody><tr>
+                                        <td>                                       
+                                            <div class="botaoRodape" style="font-size:11px; font-weight:bold; width:55px">
+                                              
+                                         	   <span class="bt_acessar">Acessar</span>
+                                   			   <div class="correcaominwidth_acao"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                              </tbody></table>
+                         </a>
+    </td>
+    <td class="td_conteudo_resumo" style=" padding-left:2px; padding-right:2px; padding-top:2px; padding-bottom:2px"><a style="text-decoration: none;" type="button" href="#">
+                              <table cellspacing="0" cellpadding="0" border="0" style="margin:0" class="botaoRodapeBordaLeft bt_acessar_br">
+                                    <tbody><tr>
+                                        <td>                                       
+                                            <div class="botaoRodape" style="font-size:11px; font-weight:bold; width:55px">
+                                              
+                                         	   <span class="bt_acessar">Excluir</span>
+                                   			   <div class="correcaominwidth_acao"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                              </tbody></table>
+                         </a></td>
+  </tr>
+</table> 
+<div class="separacaoEmpVerde">
+			                        <img src="images/transp.gif" width="1" height="1"/>
+		                      </div> 	
+                              <table width="100%" border="0" cellspacing="0" cellpadding="0" style="display:">
+  <tr>
+    <td><a style="text-decoration: none" type="button" href="cadastro_vendedor_pf.html">
+                              <table cellspacing="0" cellpadding="0" border="0" style="margin:0" class="botaoRodapeBordaLeft bt_acessar_br">
+                                    <tbody><tr>
+                                        <td>                                       
+                                            <div class="botaoRodape" style="font-size:11px; font-weight:bold; width:205px; margin-right:5px">
+                                              
+                                         	   <span class="bt_acessar">Adicionar Vendedor PF</span>
+                                   			   <div class="correcaominwidth_acao"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                              </tbody></table>
+              </a></td>
+    <td><a style="text-decoration: none" type="button" href="#">
+                              <table cellspacing="0" cellpadding="0" border="0" style="margin:0" class="botaoRodapeBordaLeft bt_acessar_br">
+                                    <tbody><tr>
+                                        <td>                                       
+                                            <div class="botaoRodape" style="font-size:11px; font-weight:bold; width:205px">
+                                              
+                                         	   <span class="bt_acessar">Adicionar Vendedor PJ</span>
+                                   			   <div class="correcaominwidth_acao"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                              </tbody></table>
+                         </a></td>
+    <td width="100%">&nbsp;</td>
+  </tr>
+</table>
+
+                  </div>
+                  
+                  <div id="bloco_show1" class="bl_proponente" style="display:none">
+                  
+                  <div class="SectionTitle" style="margin-top:15px">Outros Participantes Cadastrados</div>
+                  <div class="separacaoAtendVerde"><img src="images/transp.gif" width="1" height="1" /></div>
+                  <div style="position:relative">
+                  <img src="images/help_nv.png" width="42" height="34" style="position:absolute; z-index:10px; top:-6px; left:-19px"/>
+<div style="background-color:#f8f59d; padding:5px; font-family:'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif; font-size:12px; color:#000; font-weight:">
+              <span style="margin-left:20px">Cadastrar Outros Participantes se necessário.</span>
+              </div>
+                  </div>
+                 <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tabelas_resumo" style="display:none">
+  <tr>
+    <td class="td_cabecalho_resumo"><div  style="width:150px">&nbsp;CPF/CNPJ</div></td>
+    <td class="td_cabecalho_resumo" width="100%">&nbsp;Nome/Razão Social</td>
+    <td class="td_cabecalho_resumo"><div  style="width:150px">&nbsp;Qualificação</div></td>
+    <td class="td_cabecalho_resumo" width="264">&nbsp;</td>
+    <td class="td_cabecalho_resumo" width="264">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="td_conteudo_resumo">&nbsp;?</td>
+    <td class="td_conteudo_resumo">&nbsp;</td>
+    <td class="td_conteudo_resumo">&nbsp;</td>
+    <td class="td_conteudo_resumo" style=" padding-left:2px; padding-right:2px; padding-top:2px; padding-bottom:2px">
+     <a style="text-decoration: none" type="button" href="#">
+                              <table cellspacing="0" cellpadding="0" border="0" style="margin:0" class="botaoRodapeBordaLeft bt_acessar_br">
+                                    <tbody><tr>
+                                        <td>                                       
+                                            <div class="botaoRodape" style="font-size:11px; font-weight:bold; width:55px">
+                                              
+                                         	   <span class="bt_acessar">Acessar</span>
+                                   			   <div class="correcaominwidth_acao"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                              </tbody></table>
+                         </a>
+    </td>
+    <td class="td_conteudo_resumo" style=" padding-left:2px; padding-right:2px; padding-top:2px; padding-bottom:2px"><a style="text-decoration: none;" type="button" href="#">
+                              <table cellspacing="0" cellpadding="0" border="0" style="margin:0" class="botaoRodapeBordaLeft bt_acessar_br">
+                                    <tbody><tr>
+                                        <td>                                       
+                                            <div class="botaoRodape" style="font-size:11px; font-weight:bold; width:55px">
+                                              
+                                         	   <span class="bt_acessar">Excluir</span>
+                                   			   <div class="correcaominwidth_acao"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                              </tbody></table>
+                         </a></td>
+  </tr>
+</table> 
+<div class="separacaoEmpVerde">
+			                        <img src="images/transp.gif" width="1" height="1"/>
+		                      </div> 	
+                              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><a style="text-decoration: none" type="button" href="#">
+                              <table cellspacing="0" cellpadding="0" border="0" style="margin:0" class="botaoRodapeBordaLeft bt_acessar_br">
+                                    <tbody><tr>
+                                        <td>                                       
+                                            <div class="botaoRodape" style="font-size:11px; font-weight:bold; width:205px; margin-right:5px">
+                                              
+                                         	   <span class="bt_acessar">Adicionar Outro Participante PF</span>
+                                   			   <div class="correcaominwidth_acao"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                              </tbody></table>
+              </a></td>
+    <td><a style="text-decoration: none" type="button" href="#">
+                              <table cellspacing="0" cellpadding="0" border="0" style="margin:0" class="botaoRodapeBordaLeft bt_acessar_br">
+                                    <tbody><tr>
+                                        <td>                                       
+                                            <div class="botaoRodape" style="font-size:11px; font-weight:bold; width:205px">
+                                              
+                                         	   <span class="bt_acessar">Adicionar Outro Participante PJ</span>
+                                   			   <div class="correcaominwidth_acao"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                              </tbody></table>
+                         </a></td>
+    <td width="100%">&nbsp;</td>
+  </tr>
+</table>
+
+                  </div>
+                  <div id="bloco_show2" class="bl_proponente" style="margin-top:20px; display:">
+                   <div class="sub_titulo_bl">
+                        <div class="espacoTitulo"></div>
+                        	Imóveis
+                    </div>
+                  <div class="SectionTitle">Imóveis Cadastrados</div>
+                  <div>
+                  <div class="separacaoAtendVerde"><img src="images/transp.gif" width="1" height="1" /></div>
+                 <div style="position:relative">
+                  <img src="images/check_resumo.png"  style="position:absolute; z-index:10px; top:-1px; left:-14px"/>
+<div style="background-color:#90fa90; padding:5px; font-family:'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif; font-size:12px; color:#000; font-weight:">
+              <span style="margin-left:20px"><strong style="color:#2e7019">Cadastro do Imóvel concluído.</strong></span>
+              </div>
+                  </div> 
+<div class="separacaoEmpVerde">
+			                        <img src="images/transp.gif" width="1" height="1"/>
+                    </div> 	
+                    
+                    <div style="border:#90fa90 3px solid">
+                 <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tabelas_resumo" style=" border-left:#34ca34 1px solid;  border-right:#34ca34 1px solid;  border-top:#34ca34 1px solid;  border-bottom:#34ca34 1px solid">
+  <tr>
+    <td class="td_cabecalho_resumo"><div  style="width:150px">&nbsp;CEP</div></td>
+    <td class="td_cabecalho_resumo" width="100%">&nbsp;Endereço</td>
+    <td class="td_cabecalho_resumo"><div  style="width:150px">&nbsp;Qualificação</div></td>
+    <td class="td_cabecalho_resumo" width="264">&nbsp;</td>
+    <td class="td_cabecalho_resumo" width="264" style="border-right:0">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="td_conteudo_resumo" style="border-bottom:0" >&nbsp;05434-000</td>
+    <td class="td_conteudo_resumo" style="border-bottom:0">&nbsp;Rua Wisard, 264</td>
+    <td class="td_conteudo_resumo" style="border-bottom:0">&nbsp;Próprio</td>
+    
+    <td class="td_conteudo_resumo" style=" padding-left:2px; padding-right:2px; padding-top:2px; padding-bottom:2px; border-bottom:0" >
+      <a style="text-decoration: none" type="button" href="cadastro_comprador_pf_conjuge.html">
+        <table cellspacing="0" cellpadding="0" border="0" style="margin:0" class="botaoRodapeBordaLeft bt_acessar_br">
+          <tbody><tr>
+            <td>                                       
+              <div class="botaoRodape" style="font-size:11px; font-weight:bold; width:55px; background-color:#34ca34">
+                
+                <span class="bt_acessar">Acessar</span>
+                <div class="correcaominwidth_acao"></div>
+                </div>
+              </td>
+            </tr>
+            </tbody></table>
+        </a>
+      </td>
+    <td class="td_conteudo_resumo" style=" padding-left:2px; padding-right:2px; padding-top:2px; padding-bottom:2px;border-bottom:0; border-right:0"><a style="text-decoration: none;" type="button" href="#">
+      <table cellspacing="0" cellpadding="0" border="0" style="margin:0" class="botaoRodapeBordaLeft bt_acessar_br">
+        <tbody><tr>
+          <td>                                       
+            <div class="botaoRodape" style="font-size:11px; font-weight:bold; width:55px; background-color:#34ca34">
+              
+              <span class="bt_acessar">Excluir</span>
+              <div class="correcaominwidth_acao"></div>
+              </div>
+            </td>
+          </tr>
+          </tbody></table>
+      </a></td>
+  </tr>
+</table> 
+</div>
+</div>
+                  <div class="separacaoAtendVerde"><img src="images/transp.gif" width="1" height="1" /></div>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tabelas_resumo" style=" display:none">
+                    <tr>
+    <td class="td_cabecalho_resumo"><div  style="width:150px">&nbsp;CEP</div></td>
+    <td class="td_cabecalho_resumo" width="100%">&nbsp;Endereço</td>
+    <td class="td_cabecalho_resumo"><div  style="width:150px">&nbsp;Qualificação</div></td>
+    <td class="td_cabecalho_resumo" width="264">&nbsp;</td>
+    <td class="td_cabecalho_resumo" width="264">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="td_conteudo_resumo">&nbsp;?</td>
+    <td class="td_conteudo_resumo">&nbsp;</td>
+    <td class="td_conteudo_resumo">&nbsp;</td>
+    <td class="td_conteudo_resumo" style=" padding-left:2px; padding-right:2px; padding-top:2px; padding-bottom:2px">
+     <a style="text-decoration: none" type="button" href="#">
+                              <table cellspacing="0" cellpadding="0" border="0" style="margin:0" class="botaoRodapeBordaLeft bt_acessar_br">
+                                    <tbody><tr>
+                                        <td>                                       
+                                            <div class="botaoRodape" style="font-size:11px; font-weight:bold; width:55px">
+                                              
+                                         	   <span class="bt_acessar">Acessar</span>
+                                   			   <div class="correcaominwidth_acao"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                              </tbody></table>
+                         </a>
+    </td>
+    <td class="td_conteudo_resumo" style=" padding-left:2px; padding-right:2px; padding-top:2px; padding-bottom:2px"><a style="text-decoration: none;" type="button" href="#">
+                              <table cellspacing="0" cellpadding="0" border="0" style="margin:0" class="botaoRodapeBordaLeft bt_acessar_br">
+                                    <tbody><tr>
+                                        <td>                                       
+                                            <div class="botaoRodape" style="font-size:11px; font-weight:bold; width:55px">
+                                              
+                                         	   <span class="bt_acessar">Excluir</span>
+                                   			   <div class="correcaominwidth_acao"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                              </tbody></table>
+                         </a></td>
+  </tr>
+</table> 
+<div class="separacaoEmpVerde">
+			                        <img src="images/transp.gif" width="1" height="1"/>
+	                        </div> 	
+                              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><a style="text-decoration: none" type="button" href="cadastro_imovel.html">
+                              <table cellspacing="0" cellpadding="0" border="0" style="margin:0" class="botaoRodapeBordaLeft bt_acessar_br">
+                                    <tbody><tr>
+                                        <td>                                       
+                                            <div class="botaoRodape" style="font-size:11px; font-weight:bold; width:164px; margin-right:5px">
+                                              
+                                         	   <span class="bt_acessar">Adicionar Imóvel</span>
+                                   			   <div class="correcaominwidth_acao"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                              </tbody></table>
+              </a></td>
+    
+    <td width="100%">&nbsp;</td>
+  </tr>
+</table>
+
+                  </div>
+                   <div class="rodapeTelas" style="clear:left; margin-top:20px">
+                   
+          
+          <table border="0" cellspacing="0" cellpadding="0" class="ajuste_rodape">
+                    <tr>
+                      <td>
+                      <a type="button"  href="simulador.html" style="text-decoration:none">
+<table border="0" 
+           
+                                cellspacing="0" 
+                                cellpadding="0" 
+                                class="botaoRodapeBordaLeft bt_guardar" 
+                                style="margin-left:0"
+                               >
+                                    <tr>
+                                        <td>
+                                       
+                                            <div 
+                                                 class="botaoRodape" style="font-size:11px; font-weight:bold; width:120px">
+                                            
+                                               Voltar
+                                              
+                                                  <div class="correcaominwidth"></div>
+                                              
+                                            </div>
+                                        </td>
+                                    </tr>
+              </table>
+              </a>
+                      <a type="button"  href="#" style="text-decoration:none">
+<table border="0" 
+           
+                                cellspacing="0" 
+                                cellpadding="0" 
+                                class="botaoRodapeBordaLeft bt_guardar" 
+                               >
+                                    <tr>
+                                        <td>
+                                       
+                                            <div 
+                                                 class="botaoRodape" style="font-size:11px; font-weight:bold; width:120px">
+                                            
+                                               Imprimir Proposta
+                                              
+                                                  <div class="correcaominwidth"></div>
+                                              
+                                            </div>
+                                        </td>
+                                    </tr>
+              </table>
+              </a>
+              <a id="show_blocos" type="button" href="indexacao.html" style="text-decoration:none">
+<table border="0" 
+           
+                                cellspacing="0" 
+                                cellpadding="0" 
+                                class="botaoRodapeBordaRight bt_guardar"
+                                style="margin-right:0" 
+                               >
+                                    <tr>
+                                        <td>
+                                       
+                                            <div id="block_concluir"
+                                                 class="botaoRodape" style="font-size:11px; font-weight:bold; width:120px">
+                                            
+                                               Concluir Fase
+                                              
+                                                  <div class="correcaominwidth"></div>
+                                              
+                                            </div>
+                                        </td>
+                                    </tr>
+              </table>
+              </a>
+              
+              <a type="button"  href="index.html" style="text-decoration:none">
+<table border="0" 
+           
+                                cellspacing="0" 
+                                cellpadding="0" 
+                                class="botaoRodapeBordaRight bt_guardar"
+                                
+                               >
+                                    <tr>
+                                        <td>
+                                       
+                                            <div 
+                                                 class="botaoRodape" style="font-size:11px; font-weight:bold; width:120px">
+                                            
+                                               Guardar
+                                              
+                                                  <div class="correcaominwidth"></div>
+                                              
+                                            </div>
+                                        </td>
+                                    </tr>
+              </table>
+              </a>
+                      </td>
+                      </tr>
+                      </table>
+                      </div>
+                </td>
+            </tr>
+        </table>    
+    
+    </div>
+
+
+
+<table cellspacing="0" cellpadding="0" width="100%" border="0" style="bottom:0; position: fixed; display:">
+	<tr>
+    <td align="left"><div class="rodapeCliente"></div></td>
+    <td width="100%" align="center" class="rodapeClienteDegrade"><div class="rodapeClienteImagemDegrade"></div></td>
+    <td align="right"><div class="rodapeClienteDireita"></div></td>
+  </tr>
+</table>
+
+
+</body>
+</html>

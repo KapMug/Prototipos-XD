@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" href="css/styles_1024.css" type="text/css">
+<link rel="stylesheet" href="css/styles_800.css" type="text/css">
+<script type="text/javascript" language="javascript" src="js/jquery-2.1.1.min.js" ></script>
+
+ <script>
+ 
+ $(document).ready(function() {
+
+$("#estado_civil").change(function(){
+	
+			var estado = $("#estado_civil").val();	
+			
+
+			if(estado == "1" || estado == "9"){
+							$("#bl_conjuge").show();
+				
+			} else{
+				$("#bl_conjuge").hide();
+			}
+				
+		});
+		
+		 }); 
+	
+	</script>
+
+<title>Protótipo Santander - Simulador / Originação</title>
+</head>
+
+<body>
+
+<table cellspacing="0" cellpadding="0" width="100%" border="0" class="header">
+  <tr>
+    <td valign="middle" class="bgLogo">
+      <img width="280" height="1" src="images/transp.gif" />
+    </td>
+    <td width="100%" valign="top">&nbsp;</td>
+  </tr>
+</table>
+
+    <div id="divAguarde" class="Section" style="width:800px; padding-bottom:30px">
+    
+        <table class="MainFrame" style="width:100%">
+            <tr>
+                <td>	
+                <div style="margin-right:20px">
+                  <a href="pre_simulador.html"><img src="images/imagemBotaoCreditoImobiliarioSimulacao-fundo.png" width="128" height="128" /></a>
+                  <div style="padding-left:30px; font-family:verdana; font-size:11px; padding-top:5px; color:#333333">Cenário 01</div>
+        </div>          
+</td>
+<td style="display:none" >
+<div style="margin-right:20px">
+<a href="cenario_02/pre_simulador.html"><img src="images/imagemBotaoCreditoImobiliarioSimulacao-fundo.png" width="128" height="128" /></a>
+                  <div style="padding-left:30px; font-family:verdana; font-size:11px; padding-top:5px; color:#333333">Cenário 02</div>
+                  </div>
+</td>
+<td style="display:none">
+<div style="margin-right:20px">
+<a href="cenario_02/selecao.html"><img src="images/imagemBotaoPropostaAndamento.png" width="128" height="128" /></a>
+                  <div style="padding-left:30px; font-family:verdana; font-size:11px; padding-top:5px; color:#333333">Cenário 02</div>
+                  </div>
+</td>
+<td width="100%">
+</td>
+  </tr>
+</table>
+</div>
+
+</body>
+</html>
